@@ -1,0 +1,133 @@
+11:14:32,409 INFO  [org.jboss.modules] JBoss Modules version 1.0.1.GA
+11:14:33,352 INFO  [org.jboss.msc] JBoss MSC version 1.0.0.GA
+11:14:33,413 INFO  [org.jboss.as] JBoss AS 7.0.0.Final "Lightning" starting
+11:14:33,415 DEBUG [org.jboss.as.config] Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = E:\Stay001\jboss-as-web-7.0.0.Final\jboss-modules.jar
+	java.class.version = 51.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.7.0_60\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.7.0_60\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.7.0_60\jre
+	java.io.tmpdir = C:\Users\vyman.hm\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.7.0_60\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;native;C:/Program Files/Java/jdk1.7.0_60/bin/../jre/bin/server;C:/Program Files/Java/jdk1.7.0_60/bin/../jre/bin;C:/Program Files/Java/jdk1.7.0_60/bin/../jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.7.0_60\bin;C:\apache-maven-3.0.3\bin;;E:\Stay001\juno\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.7.0_60-ea-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.7
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.7.0_60-ea
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.7
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 24.60-b09
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = E:\Stay001\jboss-as-web-7.0.0.Final
+	jboss.host.name = wlw7-vymanh
+	jboss.modules.dir = E:\Stay001\jboss-as-web-7.0.0.Final\modules
+	jboss.node.name = wlw7-vymanh
+	jboss.qualified.host.name = wlw7-vymanh
+	jboss.server.base.dir = E:\Stay001\jboss-as-web-7.0.0.Final\standalone
+	jboss.server.config.dir = E:\Stay001\jboss-as-web-7.0.0.Final\standalone\configuration
+	jboss.server.data.dir = E:\Stay001\jboss-as-web-7.0.0.Final\standalone\data
+	jboss.server.deploy.dir = E:\Stay001\jboss-as-web-7.0.0.Final\standalone\data\content
+	jboss.server.log.dir = E:\Stay001\jboss-as-web-7.0.0.Final\standalone\log
+	jboss.server.name = wlw7-vymanh
+	jboss.server.temp.dir = E:\Stay001\jboss-as-web-7.0.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/E:/Stay001/jboss-as-web-7.0.0.Final/standalone/configuration/logging.properties
+	module.path = E:/Stay001/jboss-as-web-7.0.0.Final/modules
+	org.jboss.boot.log.file = E:/Stay001/jboss-as-web-7.0.0.Final/standalone/log/boot.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 7
+	os.version = 6.1
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.7.0_60\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_60\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_60\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_60\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_60\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_60\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_60\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_60\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.7.0_60\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp E:/Stay001/jboss-as-web-7.0.0.Final/modules -logmodule org.jboss.logmanager -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone --server-config=standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = Service Pack 1
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = E:\Stay001\jboss-as-web-7.0.0.Final\bin
+	user.home = C:\Users\vyman.hm
+	user.language = en
+	user.name = Vyman.HM
+	user.script = 
+	user.timezone = Asia/Calcutta
+	user.variant = 
+11:14:37,827 INFO  [org.jboss.as] creating http management service using network interface (management) port (9990) securePort (-1)
+11:14:37,897 INFO  [org.jboss.as.logging] Removing bootstrap log handlers
+11:15:01,770 INFO  [org.jboss.as.logging] Restored bootstrap log handlers
+11:15:01,774 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/StayEclipse]] Destroying Spring FrameworkServlet 'jboss-as-kitchensink'
+11:15:01,775 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] Closing WebApplicationContext for namespace 'jboss-as-kitchensink-servlet': startup date [Mon Nov 10 11:14:54 IST 2014]; parent: Root WebApplicationContext
+11:15:01,788 INFO  [org.jboss.as.jmx.JMXConnectorService] JMX remote connector stopped
+11:15:01,795 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c087cf8: defining beans [bookingController,facilityController,homeController,memberController,memberRestController,roomController,stayController,stayNearByPlaceController,staySuiteController,userController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,viewResolver,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,multipartResolver,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@5aa4e1af
+11:15:01,804 INFO  [org.apache.catalina.core.StandardContext] Container org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/] has not been started
+11:15:01,883 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[default-host].[/StayEclipse]] Closing Spring root WebApplicationContext
+11:15:01,884 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] Closing Root WebApplicationContext: startup date [Mon Nov 10 11:14:53 IST 2014]; root of context hierarchy
+11:15:01,885 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5aa4e1af: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,facilityDaoImpl,memberDaoImpl,roleDaoImpl,stayBookingDetailsDaoImpl,stayDaoImpl,stayMenuDaoImpl,stayNearByPlaceDaoImpl,stayPhotoDaoImpl,staySuiteDaoImpl,staySuiteFacilityDaoImpl,staySuitePhotosDaoImpl,suiteTypeDaoImpl,userDaoImpl,userRoleDaoImpl,facilityServiceImpl,nuxeoServerServiceImpl,roleServiceImpl,stayMenuServiceImpl,stayNearByPlaceServiceImpl,stayServiceImpl,staySuiteServiceImpl,suiteTypeServiceImpl,userRoleServiceImpl,userServiceImpl,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,messageSource,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mailSender,velocityEngine,entityManagerFactory,entityManager,dataSource,transactionManager,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+11:15:01,902 INFO  [org.jboss.jpa] stopping Persistence Unit Service 'StayEclipse.war#primary' 
+11:15:01,904 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH00227:Running hbm2ddl schema export
+11:15:01,915 INFO  [stdout] Hibernate: alter table StayBookingDetails drop foreign key FKE40C1A8258E67D6E
+11:15:02,142 INFO  [stdout] Hibernate: alter table StayMenu drop foreign key FK52A81F789EEB7E66
+11:15:02,206 INFO  [stdout] Hibernate: alter table StayNearbyPlaces drop foreign key FK2AFF24C49EEB7E66
+11:15:02,272 INFO  [stdout] Hibernate: alter table StayPhotos drop foreign key FK4E67705A9EEB7E66
+11:15:02,340 INFO  [stdout] Hibernate: alter table StaySuite drop foreign key FK2B78FFF46402A7
+11:15:02,415 INFO  [stdout] Hibernate: alter table StaySuite drop foreign key FK2B78FFF9EEB7E66
+11:15:02,539 INFO  [stdout] Hibernate: alter table StaySuiteFacility drop foreign key FK679BF3C2506A1F3B
+11:15:02,673 INFO  [stdout] Hibernate: alter table StaySuiteFacility drop foreign key FK679BF3C29FFF9C26
+11:15:02,730 INFO  [stdout] Hibernate: alter table StaySuitePhotos drop foreign key FKB856C96058E67D6E
+11:15:02,798 INFO  [stdout] Hibernate: alter table UserRole drop foreign key FKF3F76701620E6D46
+11:15:02,914 INFO  [stdout] Hibernate: alter table UserRole drop foreign key FKF3F767017393126
+11:15:02,980 INFO  [stdout] Hibernate: drop table if exists Facility
+11:15:03,096 INFO  [stdout] Hibernate: drop table if exists Member
+11:15:03,221 INFO  [stdout] Hibernate: drop table if exists Role
+11:15:03,352 INFO  [stdout] Hibernate: drop table if exists Stay
+11:15:03,437 INFO  [stdout] Hibernate: drop table if exists StayBookingDetails
+11:15:03,673 INFO  [stdout] Hibernate: drop table if exists StayMenu
+11:15:03,829 INFO  [stdout] Hibernate: drop table if exists StayNearbyPlaces
+11:15:04,210 INFO  [stdout] Hibernate: drop table if exists StayPhotos
+11:15:04,343 INFO  [stdout] Hibernate: drop table if exists StaySuite
+11:15:04,477 INFO  [stdout] Hibernate: drop table if exists StaySuiteFacility
+11:15:04,660 INFO  [stdout] Hibernate: drop table if exists StaySuitePhotos
+11:15:04,777 INFO  [stdout] Hibernate: drop table if exists SuiteType
+11:15:04,937 INFO  [stdout] Hibernate: drop table if exists User
+11:15:05,071 INFO  [stdout] Hibernate: drop table if exists UserRole
+11:15:05,211 INFO  [stdout] Hibernate: drop table if exists hibernate_sequence
+11:15:05,385 INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH00230:Schema export complete
+11:15:05,389 INFO  [com.arjuna.ats.jbossatx] ARJUNA32018: Destroying TransactionManagerService
+11:15:05,391 INFO  [com.arjuna.ats.jbossatx] ARJUNA32014: Stopping transaction recovery manager
+11:15:05,511 INFO  [org.jboss.as.server.deployment] Stopped deployment StayEclipse.war in 3782ms
+11:15:05,511 INFO  [org.jboss.as] JBoss AS 7.0.0.Final "Lightning" stopped in 3754ms

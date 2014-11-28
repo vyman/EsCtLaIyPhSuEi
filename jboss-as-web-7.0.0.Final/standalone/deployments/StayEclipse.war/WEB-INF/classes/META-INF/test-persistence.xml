@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+	<persistence-unit name="testPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>com.indi.stay.domain.Member</class>
+		<class>com.indi.stay.domain.User</class>
+		<class>com.indi.stay.domain.Role</class>
+		<class>com.indi.stay.domain.UserRole</class>
+		<class>com.indi.stay.domain.Stay</class>
+		<class>com.indi.stay.domain.SuiteType</class>
+		<class>com.indi.stay.domain.StaySuite</class>
+		<class>com.indi.stay.domain.StayNearbyPlaces</class>
+		<class>com.indi.stay.domain.StayPhotos</class>
+		<class>com.indi.stay.domain.Facility</class>
+		<class>com.indi.stay.domain.StaySuiteFacility</class>
+		<class>com.indi.stay.domain.StayMenu</class>
+		<class>com.indi.stay.domain.StayBookingDetails</class>
+		<class>com.indi.stay.domain.StaySuitePhotos</class>
+		
+		<properties>
+        	<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+	        <property name="hibernate.hbm2ddl.auto" value="create" />
+        	<property name="hibernate.show_sql" value="true" />
+        </properties>
+	</persistence-unit>
+</persistence>

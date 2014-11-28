@@ -1,0 +1,9 @@
+
+META-INF
+org
+org/jboss
+org/jboss/invocation
+org/jboss/invocation/proxy
+META-INF/maven
+META-INF/maven/org.jboss.invocation
+META-INF/maven/org.jboss.invocation/jboss-invocation
