@@ -21,6 +21,7 @@ public class FacilityServiceImpl implements FacilityService {
 	
 	@Override
 	public List<Facility> findAllOrderedByName(){
+		System.out.println("test commit");
 		return facilityDao.findAllOrderedByName();
 	}
 }
