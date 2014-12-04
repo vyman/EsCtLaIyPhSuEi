@@ -16,7 +16,7 @@ public class NuxeoTest {
 	           "http://localhost:8080/nuxeo/site/automation");
 	 
 	    Session session = client.getSession("Administrator", "Administrator");
-	 // get the root
+	 // get the root test simple comment
 	    Document root = (Document) session.newRequest("Document.Fetch").set(
 	            "value", "/").execute();
 	    // create a file document
