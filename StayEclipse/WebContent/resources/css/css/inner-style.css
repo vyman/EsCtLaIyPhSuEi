@@ -1,0 +1,275 @@
+@charset "utf-8";
+@import url(//fonts.googleapis.com/css?family=Patua+One);
+body{ margin:0px 0px;}
+.headerBg{ margin:0px 0px; width:100%; height:80px;  background-color:#ffffff; border-bottom: 3px solid #b40808; }
+.header{ margin:0px auto; width:980px;  display:block; clear:both; position:relative; }
+.logo{ margin:10px 0px; float:left; width:35%;  }
+.loginbox{float:right; margin-right:0px; margin-top:25px;   }
+
+.leftsec{ float:left; width:650px;}
+.rightsec{ float:right; width:auto !important; margin-right:10px; }
+.rightsec1{ float:right; width:250px !important; margin-right:10px; border:1px solid #e6eaea; padding:10px 20px; font-family: 'Patua One', cursive; color:#666;}
+.rightsec1 h3{margin:5px 0px; font-weight:normal; color: #b40808;}
+.leftsec input, .rightsec input{font-family: 'Patua One', cursive; width: 300px; font-size: 18px; line-height: 32px;
+	height: 35px; border: 1px solid #e6eaea; -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;}
+.rightsec input{ font-size: 15px; margin-top:30px;}
+.leftsec-booking{ float:left; width:650px; margin-right:30px;}
+.rightsec-booking{ float:right; width:auto !important; margin-left:10px; }
+.rightsec-booking input{font-family: 'Patua One', cursive; width: 150px; font-size: 18px; line-height: 25px;
+	height: 24px; border: 1px solid #e6eaea; -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;}
+	
+.leftsec-booking h2, .rightsec-booking h2{font-size: 30px; line-height: 24px; color: #b40808; font-family: 'Patua One', cursive;}
+.rightsec-booking table{margin-top:10px;}
+.rightsec-booking td{padding-bottom:8px; font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;}
+.rightsec-booking td:first-child, .bookingleftsec td:first-child, .bookingrightsec td:first-child{text-align:right;}
+
+.bookingleftsec{ float:left; width:450px; font-family: 'Patua One', cursive; color:#666; margin-bottom:30px;}
+.bookingrightsec{ float:right; width:auto !important; margin-right:20px; vertical-align:top; font-family: 'Patua One', cursive;  color:#666; }
+.bookingleftsec h2{font-size: 18px; line-height: 24px; color: #b40808; font-family: 'Patua One', cursive;}
+.bookingrightsec h2{font-size: 18px; line-height: 24px; color: #b40808; font-family: 'Patua One', cursive;}
+.bdyhd1{font-size: 32px; line-height: 24px; color: #a79393; font-family: 'Patua One', cursive; border-bottom:1px solid #eeeeee; padding-bottom:15px; margin-bottom:10px;}
+.bookingrightsec input, .bookingleftsec input{font-family: 'Patua One', cursive; width: 250px; font-size: 18px; line-height: 25px;
+	height: 28px; border: 1px solid #e6eaea; -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;}
+.bookingleftsec textarea{font-family: 'Patua One', cursive; width: 250px; font-size: 16px; line-height: 25px;
+	height: 80px; border: 1px solid #e6eaea; -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;}
+.bookingrightsec input.sml{width: 50px;}
+
+.bodysec{ float:left; width:100%; font-family: 'Patua One', cursive; color:#666; margin-bottom:30px;}
+.bodysec h2{font-size: 18px; line-height: 24px; color: #b40808; font-family: 'Patua One', cursive; margin-top:40px;}
+.bodysec select{font-family: 'Patua One', cursive; width: 200px; font-size: 16px; line-height: 25px;
+	height: 32px; border: 1px solid #e6eaea;}
+.bodysec p span{ font-weight:bold; color:#236aac}
+
+.suiteleftsec{ float:left; width:220px; margin-right:10px; font-family: 'Patua One', cursive; width: 200px; font-size: 16px; line-height: 25px;}
+.suiterightsec{ float:right; width:700px !important; font-family: 'Patua One', cursive; width: 200px; font-size: 16px; line-height: 25px; margin-bottom:20px; }
+
+.leftsec textarea{font-family: 'Patua One', cursive; width: 300px; font-size: 18px;line-height: 32px;
+	height: 105px; border: 1px solid #e6eaea; -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;}	
+.btn-1 { float: right; margin:15px 20px 0px 0px;
+	position: relative;
+	display: block;
+	padding: 0px 41px 0px 10px;
+	
+	
+	font-family: 'Patua One', cursive;
+	color: #202020;
+	
+}
+.btn-1 input{font-family: 'Patua One', cursive; width: 197px; font-size: 18px;line-height: 32px;
+	height: 40px; border: 1px solid #e6eaea; -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;}
+.btn-1 span { 
+	display: block; 
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: -1px;
+	right: -1px;
+	background: url(../images/arrow-1.gif) no-repeat right #ffffff;
+}
+.btn-1:hover span {background: url(../images/arrow-1-1.gif) no-repeat right #ffffff;}
+.searchbxhd{margin:15px 20px 20px 20px; float:left;font-size: 18px; font-size: 18px; line-height: 24px; color: #b40808; font-family: 'Patua One', cursive;}
+.content{background: #fbfbfb; border-top: 1px solid #eeeeee; padding-top: 2px; padding-bottom: 67px;}
+
+.bannerarea{ background: url(../images/bg-1.jpg) center bottom no-repeat; 
+	padding-bottom: 95px; min-height:400px; height:auto !important;
+	border-bottom: 8px solid #b40808;}
+.block-1 {	margin-top: 30px; float:left; margin-right:50px; margin-bottom:20px;}
+.block-1 .text-2 { margin-top: 12px;}
+.block-2 {	margin-top: 40px;  float:left;}
+.row{ clear:both;}
+.dash-border{ background-image:url(../images/dot-img.png); background-repeat:repeat-x; height:6px; margin-top:-4px; }
+
+.red-dash-border{ background-image:url(../images/red-dot-img.png); background-repeat:repeat-x; height:4px; margin-top:-4px; }
+.red-band{ float:right; background-color: #b40808; width:210px; margin-top:3px; height:222px !important;}
+
+.block-3{ background-color:#ffffff; width:660px; height:300px; float:left; margin-bottom:30px;}
+.block-4{ background-color:#ffffff; width:280px; float:right; height:140px; margin-bottom:20px;}
+.title-1 { font-size: 48px; line-height: 48px; color: #202020; font-family: 'Patua One', cursive; padding-top: 51px; margin-bottom: 2px;} 
+	.title-2 { font-size: 30px; line-height: 32px; color: #fff; font-family: 'Patua One', cursive; padding-top: 24px;} 
+	.title-3 { font-size: 30px; line-height: 32px; color: #b40808; font-family: 'Patua One', cursive; padding-top: 16px;} 
+	.text-1 { color: #202020;}
+	.text-2 { font-size: 48px; line-height: 32px; color: #fff; font-family: 'Patua One', cursive; letter-spacing: 3px;}
+	.text-3 { font-size: 30px; line-height: 32px; color: #fff; font-family: 'Patua One', cursive;}
+	.text-4 { font-size: 18px; line-height: 22px; color: #fff; font-family: 'Patua One', cursive;}
+	.text-5 { font-size: 18px; line-height: 24px; color: #202020; font-family: 'Patua One', cursive;}
+	.text-6 { font-size: 16px; line-height: 24px; color: #666666; font-family: 'Patua One', cursive; vertical-align:top; text-align:right;  padding-right:10px;}
+	.text-7 { color: #202020; font-weight: bold;}
+.text-4 a{ color:#fff;}
+
+.spacer{ margin:20px 20px;}
+
+.block-4 a {display:table-cell; width:280px; height:140px; 
+	text-align:left;
+	font-size: 18px;
+	color: #b40808;
+	font-family: 'Patua One', cursive;
+	position: relative; 
+	vertical-align: middle; text-decoration:none;
+}
+.block-4 a p{ margin:20px 20px;
+	line-height: 20px; }
+.right-1{ display:table-cell; width:280px; height:140px; background-image:url(../images/house.png); background-position:right bottom; background-repeat:no-repeat; }
+.block-4 a:hover {display:table-cell; color: #ffffff; background-color: #b40808; margin-top:-4px;
+	vertical-align: middle; 
+	width:280px; height:100% !important;
+}
+
+.block-4:hover .dash-border{background-color: #b40808; background-image:none;}
+
+
+.mid-nav { margin:0px 0px; background: #fefefe; border-bottom: 1px solid #eeeeee; height: 80px; clear:both;}
+
+.container{ margin:0px auto; max-width:980px;}
+.panel{ margin-left:0px; margin-right:0px;}	
+.bdy-container{ margin:0px auto; width:980px;  min-height:530px; position:relative; clear:both; margin-top:20px; }	
+
+.bdy-container	h1, .container h1{font-size: 24px; color: #b40808; font-family: 'Patua One', cursive; margin:10px 0px 20px 20px;}
+
+.profilephoto{ background-image:url(../images/blank-profile.jpg); background-repeat:no-repeat; width:150px; height:150px; margin:0px auto; border:1px dashed #666;}
+.leftsec h2{font-size: 30px; line-height: 24px; color: #b40808; font-family: 'Patua One', cursive;}
+.rightsec h2{font-size: 18px; line-height: 24px; color: #666666; font-family: 'Patua One', cursive; margin-top:80px;}
+.list-1 {width:243px; float:left; height: 80px;
+	padding-top: 0; text-align:center;
+	display: table-cell;
+	vertical-align: middle; border-right: 1px solid #efefef; display:block; }
+.container h2{font-size: 30px; line-height: 24px; color: #b40808; font-family: 'Patua One', cursive; margin-bottom:25px; margin-top:20px;}
+
+.first{ border-left: 1px solid #efefef;}
+
+.list-1 a {
+	font-size: 18px;
+	line-height: 20px;
+	color: #b40808;
+	font-family: 'Patua One', cursive;
+	position: relative; 
+	vertical-align: middle; text-decoration:none;
+}
+ .list-1 .rel{ display:table-cell; width:243px; height:80px; vertical-align: middle;}
+.list-1 a:hover { color: #ffffff; background-color: #b40808;
+	vertical-align: middle; width:243px; text-align:center;
+	height: 80px;
+	padding-top: 0;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.submit_btn{
+	display: inline-block;
+	padding: 11px 23px 11px 26px;
+	background: #f4f4f4;
+	color: #434343;
+	text-decoration:none; 
+	font:14px/20px "Trebuchet MS", Arial, sans-serif;
+	border-radius: 15px;
+	min-width: 57px;
+	/* margin-left: -40px; */
+	white-space: nowrap;
+}
+.submit_btn span{ font-size:24px; color:#1200FD;}
+.submit_btn img{margin-left: 7px; margin-top: 1px; display: inline-block;}
+.submit_btn:hover{
+	background: #2e2e2e;
+	color: #fff;
+}
+
+
+img.no_resize, h1 img{width: auto;}
+
+.gen_btn{
+	display: inline-block;
+	padding: 8px 13px 8px 13px;
+	background: #f4f4f4;
+	color: #434343;
+	text-decoration:none; 
+	font:14px/20px "Trebuchet MS", Arial, sans-serif;
+	border-radius: 12px;
+	min-width: 57px;
+	/* margin-left: -40px; */
+	white-space: nowrap;
+}
+.gen_btn img{margin-left: 7px;margin-top: 7px; display: inline-block;}
+.gen_btn:hover{
+	background: #2e2e2e;
+	color: #fff;
+}
+
+.midfulldiv{ clear:both; margin:20px 0px; text-align:center; width:100%;}
+.butDivBdr{ clear:both; margin:20px 0px; padding-top:20px; height:80px;  text-align:left; width:100%; border-top:1px solid #eeeeee;}
+.butDivBdr .lft{float:left; width:auto;}
+.butDivBdr  .rgt{float:right; width:auto;}
+.cenDivBdr{ clear:both; margin:20px 0px; padding-top:20px;  text-align:center; width:100%; border-top:1px solid #eeeeee;}
+.cenDivBdr h2{font-size: 20px; color: #b40808; font-family: 'Patua One', cursive; margin:10px 0px 20px 0px;}
+.cenDivBdr a{ margin:0px 5px;}
+.f-container { background: #fbfbfb;  border-top: 1px solid #eeeeee;  color: #c0c0c0; font-family: 'Patua One', cursive; font-size: 18px; padding-bottom: 30px; min-height:60px; height:auto !important;}
+.footersec{ margin:0px auto; width:980px; }
+.f-logo{ margin:10px 10px; float:left; width: auto !important; }
+.copyright {float:left; margin-top: 35px; width: auto; }
+.copyright a{color: #c0c0c0;}
+.social{ float:right;
+	display: inline-block;
+	overflow:hidden;
+	margin-top: 20px ;margin-right: 20px;
+}
+.social a{
+	display:block; 
+	float:left;
+	width:45px;
+	height: 49px;
+	overflow:hidden;
+	margin-left: 14px;
+}
+.social a:first-child{
+	margin: 0 0 0 0;
+}
+.social a:hover img{
+	margin-top:-50px;
+}
+
+.addroomleftsec{ float:left; width:500px !important; margin-right:10px; border:1px solid #e6eaea; padding:10px 20px; font-family: 'Patua One', cursive; color:#666;}
+.addroomrightsec{ float:right; width:450px !important; margin-right:10px; border:1px solid #e6eaea; padding:10px 20px; font-family: 'Patua One', cursive; color:#666;}
+
+.addroomleftsec table tr td{ text-align:left; padding-bottom:10px; padding-left:10px;}
+.addroomrightsec table tr td{ text-align:left; padding-bottom:7px; padding-left:10px;}
+.addroomleftsec table tr td .text6{ text-align:right; padding-bottom:10px;}
+.addroomrightsec h3, .searchresult h3{margin:5px 0px 15px 0px; line-height:130%; font-weight:normal; color: #b40808; font-size:16px; text-align:left;}
+.pluginDiv{height:50px; clear:both; text-align:center;}
+
+.searchbox{ float:left; width:300px !important; margin-right:10px; border:1px solid #e6eaea; padding:10px 20px; font-family: 'Patua One', cursive; color:#666; text-align:left;}
+.searchresult{ float:right; width:650px !important; margin-right:10px; border:1px solid #e6eaea; padding:10px 20px; font-family: 'Patua One', cursive; color:#666;}
+.searchbox table td{padding-bottom:5px; text-align:left; width:auto; }
+.searchbox table td input, .searchbox table td select{margin-bottom:10px}
+.searchresult img{ width:100px; margin-bottom:10px;}
+
+.lblstay{ width:110px; text-align:left; margin-right:10px;}
+.lblstaysm{ width:70px; text-align:left; margin-right:10px;}
+.butdiv{ margin:10px 0px; float:right; text-align:right;}
+.panel{ min-width:400px !important;}
+.panel-body img {float:left; padding:5px 5px;}
+.panel-body div{ padding-left:6px; margin-left:0px; margin-bottom:5px;}
+.panel-body .tbltxt{font-size: 16px; line-height: 24px; color: #666666; font-family: 'Patua One', cursive;}
+.panel-body .tbltxt td{ padding:6px 2px;}
+.panel-body .tbltxt1 td{ padding:5px 2px;}
