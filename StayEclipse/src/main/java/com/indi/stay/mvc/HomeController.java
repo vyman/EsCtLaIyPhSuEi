@@ -19,7 +19,7 @@ public class HomeController {
 	    public String displayFacilityPage(Model model)
 	    {
 	        model.addAttribute("staysByRating", stayService.findAllOrderedByRating());
-	        return "pr_addroom";
+	        return "pr_search-result";
 	    }
 	 
 	 @RequestMapping(method=RequestMethod.GET,value="/blueimp")
