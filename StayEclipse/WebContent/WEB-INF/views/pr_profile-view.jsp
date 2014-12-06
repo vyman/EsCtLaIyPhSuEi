@@ -10,9 +10,9 @@
 <link rel="stylesheet" type="text/css" media="all" href="resources/css/font-awesome.min.css" />
 <link rel="stylesheet" type="text/css" media="all" href="resources/css/jgallery.min.css" />
 <script type="text/javascript" src="resources/js/jquery-2.0.3.min.js"></script>
-<script src="resources/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="resources/js/tinycolor-0.9.16.min.js"></script>
-<script type="text/javascript" src="resources/js/jgallery.min.js"></script>
+<script src="resources/js/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="resources/js/js/tinycolor-0.9.16.min.js"></script>
+<script type="text/javascript" src="resources/js/js/jgallery.min.js"></script>
 <script type="text/javascript">
     $( function() {
         $( '#gallery' ).jGallery( {
