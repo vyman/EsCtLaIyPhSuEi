@@ -7,12 +7,12 @@
 <title>Huigere</title>
 <link href="resources/css/inner-style.css" rel="stylesheet" type="text/css" />
 <link href="resources/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css" />
-<link rel="stylesheet" type="text/css" media="all" href="css/jgallery.min.css" />
-<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/tinycolor-0.9.16.min.js"></script>
-<script type="text/javascript" src="js/jgallery.min.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="resources/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="resources/css/jgallery.min.css" />
+<script type="text/javascript" src="resources/js/jquery-2.0.3.min.js"></script>
+<script src="resources/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="resources/js/tinycolor-0.9.16.min.js"></script>
+<script type="text/javascript" src="resources/js/jgallery.min.js"></script>
 <script type="text/javascript">
     $( function() {
         $( '#gallery' ).jGallery( {
@@ -22,7 +22,7 @@
     </script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-<link rel="stylesheet" href="/resources/demos/style.css">
+<link rel="stylesheet" href="//resources/demos/style.css">
 <script>
 $(function() {
 $( ".datepicker" ).datepicker();
