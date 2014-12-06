@@ -7,9 +7,9 @@
 <title>Huigere</title>
 <link href="resources/css/inner-style.css" rel="stylesheet" type="text/css" />
 <link href="resources/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" media="all" href="resources/css/font-awesome.min.css" />
-<link rel="stylesheet" type="text/css" media="all" href="resources/css/jgallery.min.css" />
-<script type="text/javascript" src="resources/js/jquery-2.0.3.min.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/jgallery.min.css" />
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/tinycolor-0.9.16.min.js"></script>
 <script type="text/javascript" src="js/jgallery.min.js"></script>
@@ -166,8 +166,6 @@ $( ".datepicker" ).datepicker();
     </div>
   </div>
 </div>
-
-
 
 <!-- footer -->
 <%@include file="pr_footer.jsp" %>
