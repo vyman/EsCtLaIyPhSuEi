@@ -13,7 +13,7 @@ public class BookingController {
 	 @RequestMapping(method=RequestMethod.GET)
 	    public String displayBookingPage(Model model)
 	    {
-	        return "pr_search-result";
+	        return "pr_staytype";
 	    }
 	 
 	 @RequestMapping(method=RequestMethod.POST,value="/booking")
