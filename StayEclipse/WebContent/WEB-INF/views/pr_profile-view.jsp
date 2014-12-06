@@ -167,7 +167,7 @@ $( ".datepicker" ).datepicker();
   </div>
 </div>
 
-<!-- footer -->
+
 
 <!-- footer -->
 <%@include file="pr_footer.jsp" %>
