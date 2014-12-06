@@ -116,7 +116,7 @@ body{ margin:0px 0px;}
 	.text-3 { font-size: 30px; line-height: 32px; color: #fff; font-family: 'Patua One', cursive;}
 	.text-4 { font-size: 18px; line-height: 22px; color: #fff; font-family: 'Patua One', cursive;}
 	.text-5 { font-size: 18px; line-height: 24px; color: #202020; font-family: 'Patua One', cursive;}
-	.text-6 { font-size: 18px; line-height: 24px; color: #666666; font-family: 'Patua One', cursive; vertical-align:top; text-align:right; padding-top:8px;}
+	.text-6 { font-size: 16px; line-height: 24px; color: #666666; font-family: 'Patua One', cursive; vertical-align:top; text-align:right;  padding-right:10px;}
 	.text-7 { color: #202020; font-weight: bold;}
 .text-4 a{ color:#fff;}
 
@@ -143,10 +143,11 @@ body{ margin:0px 0px;}
 
 .mid-nav { margin:0px 0px; background: #fefefe; border-bottom: 1px solid #eeeeee; height: 80px; clear:both;}
 
-.container{ margin:0px auto; width:980px;}	
+.container{ margin:0px auto; max-width:980px;}
+.panel{ margin-left:0px; margin-right:0px;}	
 .bdy-container{ margin:0px auto; width:980px;  min-height:530px; position:relative; clear:both; margin-top:20px; }	
 
-	
+.bdy-container	h1, .container h1{font-size: 24px; color: #b40808; font-family: 'Patua One', cursive; margin:10px 0px 20px 20px;}
 
 .profilephoto{ background-image:url(../images/blank-profile.jpg); background-repeat:no-repeat; width:150px; height:150px; margin:0px auto; border:1px dashed #666;}
 .leftsec h2{font-size: 30px; line-height: 24px; color: #b40808; font-family: 'Patua One', cursive;}
@@ -155,6 +156,7 @@ body{ margin:0px 0px;}
 	padding-top: 0; text-align:center;
 	display: table-cell;
 	vertical-align: middle; border-right: 1px solid #efefef; display:block; }
+.container h2{font-size: 30px; line-height: 24px; color: #b40808; font-family: 'Patua One', cursive; margin-bottom:25px; margin-top:20px;}
 
 .first{ border-left: 1px solid #efefef;}
 
@@ -187,11 +189,14 @@ body{ margin:0px 0px;}
 	/* margin-left: -40px; */
 	white-space: nowrap;
 }
-.submit_btn img{margin-left: 7px;margin-top: 7px; display: inline-block;}
+.submit_btn span{ font-size:24px; color:#1200FD;}
+.submit_btn img{margin-left: 7px; margin-top: 1px; display: inline-block;}
 .submit_btn:hover{
 	background: #2e2e2e;
 	color: #fff;
 }
+
+
 img.no_resize, h1 img{width: auto;}
 
 .gen_btn{
@@ -212,6 +217,10 @@ img.no_resize, h1 img{width: auto;}
 	color: #fff;
 }
 
+.midfulldiv{ clear:both; margin:20px 0px; text-align:center; width:100%;}
+.butDivBdr{ clear:both; margin:20px 0px; padding-top:20px; height:80px;  text-align:left; width:100%; border-top:1px solid #eeeeee;}
+.butDivBdr .lft{float:left; width:auto;}
+.butDivBdr  .rgt{float:right; width:auto;}
 .cenDivBdr{ clear:both; margin:20px 0px; padding-top:20px;  text-align:center; width:100%; border-top:1px solid #eeeeee;}
 .cenDivBdr h2{font-size: 20px; color: #b40808; font-family: 'Patua One', cursive; margin:10px 0px 20px 0px;}
 .cenDivBdr a{ margin:0px 5px;}
@@ -239,3 +248,28 @@ img.no_resize, h1 img{width: auto;}
 .social a:hover img{
 	margin-top:-50px;
 }
+
+.addroomleftsec{ float:left; width:500px !important; margin-right:10px; border:1px solid #e6eaea; padding:10px 20px; font-family: 'Patua One', cursive; color:#666;}
+.addroomrightsec{ float:right; width:450px !important; margin-right:10px; border:1px solid #e6eaea; padding:10px 20px; font-family: 'Patua One', cursive; color:#666;}
+
+.addroomleftsec table tr td{ text-align:left; padding-bottom:10px; padding-left:10px;}
+.addroomrightsec table tr td{ text-align:left; padding-bottom:7px; padding-left:10px;}
+.addroomleftsec table tr td .text6{ text-align:right; padding-bottom:10px;}
+.addroomrightsec h3, .searchresult h3{margin:5px 0px 15px 0px; line-height:130%; font-weight:normal; color: #b40808; font-size:16px; text-align:left;}
+.pluginDiv{height:50px; clear:both; text-align:center;}
+
+.searchbox{ float:left; width:300px !important; margin-right:10px; border:1px solid #e6eaea; padding:10px 20px; font-family: 'Patua One', cursive; color:#666; text-align:left;}
+.searchresult{ float:right; width:650px !important; margin-right:10px; border:1px solid #e6eaea; padding:10px 20px; font-family: 'Patua One', cursive; color:#666;}
+.searchbox table td{padding-bottom:5px; text-align:left; width:auto; }
+.searchbox table td input, .searchbox table td select{margin-bottom:10px}
+.searchresult img{ width:100px; margin-bottom:10px;}
+
+.lblstay{ width:110px; text-align:left; margin-right:10px;}
+.lblstaysm{ width:70px; text-align:left; margin-right:10px;}
+.butdiv{ margin:10px 0px; float:right; text-align:right;}
+.panel{ min-width:400px !important;}
+.panel-body img {float:left; padding:5px 5px;}
+.panel-body div{ padding-left:6px; margin-left:0px; margin-bottom:5px;}
+.panel-body .tbltxt{font-size: 16px; line-height: 24px; color: #666666; font-family: 'Patua One', cursive;}
+.panel-body .tbltxt td{ padding:6px 2px;}
+.panel-body .tbltxt1 td{ padding:5px 2px;}
