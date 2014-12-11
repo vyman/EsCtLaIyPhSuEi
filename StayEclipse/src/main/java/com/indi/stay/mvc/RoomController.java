@@ -31,7 +31,7 @@ public class RoomController {
 	@RequestMapping(method=RequestMethod.GET)
 	public String displayBookingPage(Model model)
 	{
-		return "pr_profile-view";
+		return "pr_search-result";
 	}
 
 	@RequestMapping(method=RequestMethod.POST,value="/booking")
