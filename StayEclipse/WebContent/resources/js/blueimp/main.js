@@ -18,7 +18,7 @@ $(function () {
     $('#fileupload').fileupload({
         // Uncomment the following to send cross-domain cookies:
         //xhrFields: {withCredentials: true},
-        url: 'server/php/'
+        url: 'http://localhost:7001/StayEclipse'
     });
 
     // Enable iframe cross-domain access via redirect option:
@@ -31,7 +31,7 @@ $(function () {
         )
     );
 
-    if (window.location.hostname === 'blueimp.github.io') {
+    if (window.location.hostname === 'localhost') {
         // Demo settings:
         $('#fileupload').fileupload('option', {
             url: '//jquery-file-upload.appspot.com/',

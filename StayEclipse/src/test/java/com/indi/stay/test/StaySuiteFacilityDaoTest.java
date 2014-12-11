@@ -43,13 +43,13 @@ public class StaySuiteFacilityDaoTest {
 	public void testRegister()
 	{
 
-		Facility facility=new Facility();
-		facility.setEquipment("TV");
-		facilityDao.persist(facility);
+		Facility facility1=new Facility();
+		facility1.setEquipment("TV");
+//		facilityDao.persist(facility);
 		
 		Facility facility2=new Facility();
 		facility2.setEquipment("News Paper");
-		facilityDao.persist(facility2);
+//		facilityDao.persist(facility2);
 		
 		Stay stay=new Stay();
 		stay.setAddress("test address");
@@ -70,11 +70,11 @@ public class StaySuiteFacilityDaoTest {
 		staySuite.setDiscription("test suite");
 		staySuite.setSuiteCode("SAD001");
 		staySuite.setSuiteType(suiteType);
-		staySuite.getFacilities().add(facility);
+		staySuite.getFacilities().add(facility1);
 		staySuite.getFacilities().add(facility2);
 		staySuiteDao.persist(staySuite);
 		
-		Assert.assertEquals(1, staySuite.getFacilities().size());
+		Assert.assertEquals(2, staySuite.getFacilities().size());
 				
 	}
 

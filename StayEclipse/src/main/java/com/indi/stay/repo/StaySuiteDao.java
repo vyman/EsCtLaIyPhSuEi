@@ -12,4 +12,6 @@ public interface StaySuiteDao {
 
 	StaySuite findById(int id);
 
+	StaySuite merge(StaySuite detachedInstance);
+
 }

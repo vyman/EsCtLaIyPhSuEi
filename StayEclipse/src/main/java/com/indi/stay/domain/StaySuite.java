@@ -2,7 +2,9 @@ package com.indi.stay.domain;
 
 // Generated 13 Jun, 2014 7:51:31 PM by Hibernate Tools 3.4.0.CR1
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -35,7 +37,7 @@ public class StaySuite implements java.io.Serializable {
 	private int numberOfAvilableRooms;
 	private Double price;
 	private String suiteCode;
-	private Set<Facility> facilities = new HashSet<Facility>(0);
+	private List<Facility> facilities = new ArrayList<Facility>();
 	private Set<StayBookingDetails> stayBookingDetailses = new HashSet<StayBookingDetails>(0);
 	private Set<StaySuitePhotos> staysuitephotoses = new HashSet<StaySuitePhotos>(0);
 
@@ -54,7 +56,7 @@ public class StaySuite implements java.io.Serializable {
 	}
 
 	public StaySuite(int id, Stay stay, SuiteType suiteType,
-			String discription, String suiteCode, Set<Facility> facilities,
+			String discription, String suiteCode, List<Facility> facilities,
 			Set<StayBookingDetails> stayBookingDetailses, Set<StaySuitePhotos> staysuitephotoses) {
 		this.id = id;
 		this.stay = stay;
@@ -133,16 +135,15 @@ public class StaySuite implements java.io.Serializable {
 		this.price = price;
 	}
 
-	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@ManyToMany
 	@JoinTable(name = "stay_suite_facility", joinColumns = { 
-			@JoinColumn(name = "staysuite_id", nullable = false, updatable = false) }, 
-			inverseJoinColumns = { @JoinColumn(name = "facility_id", 
-					nullable = false, updatable = false) })
-	public Set<Facility> getFacilities() {
+			@JoinColumn(name = "staysuite_id") }, 
+			inverseJoinColumns = { @JoinColumn(name = "facility_id") })
+	public List<Facility> getFacilities() {
 		return facilities;
 	}
 
-	public void setFacilities(Set<Facility> facilities) {
+	public void setFacilities(List<Facility> facilities) {
 		this.facilities = facilities;
 	}
 

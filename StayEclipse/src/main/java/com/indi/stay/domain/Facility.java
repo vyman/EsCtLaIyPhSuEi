@@ -27,9 +27,9 @@ public class Facility implements java.io.Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private int id;
+	private Integer id;
 	private String equipment;
-	private Set<StaySuite> staySuites = new HashSet<StaySuite>(0);
+	private Set<StaySuite> staySuites = new HashSet<StaySuite>();
 
 	public Facility() {
 	}
@@ -41,11 +41,11 @@ public class Facility implements java.io.Serializable {
 
 	@Id
 	@Column(name = "facility_id", unique = true, nullable = false)
-	public int getId() {
+	public Integer getId() {
 		return this.id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -58,11 +58,7 @@ public class Facility implements java.io.Serializable {
 		this.equipment = equipment;
 	}
 	
-	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinTable(name = "stay_suite_facility", joinColumns = { 
-			@JoinColumn(name = "facility_id", nullable = false, updatable = false) }, 
-			inverseJoinColumns = { @JoinColumn(name = "staysuite_id", 
-					nullable = false, updatable = false) })
+	@ManyToMany(mappedBy="facilities")
 	public Set<StaySuite> getStaySuites() {
 		return staySuites;
 	}

@@ -46,6 +46,7 @@ public class StaySuiteDaoImpl implements StaySuiteDao{
 		}
 	}
 
+	@Override
 	public StaySuite merge(StaySuite detachedInstance) {
 		log.debug("merging StaySuite instance");
 		try {
