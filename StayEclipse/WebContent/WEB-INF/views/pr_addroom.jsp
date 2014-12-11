@@ -23,16 +23,7 @@
 
 </head>
 <body>
-	<div class="headerBg">
-		<div class="header">
-			<div class="logo">
-				<img src="resources/images/logo-huigere.png" />
-			</div>
-			<div class="loginbox btn-1">
-				Welcome: Username &nbsp; | &nbsp; <a href="#">Logout</a>
-			</div>
-		</div>
-	</div>
+	<%@include file="pr_header.jsp" %>
 	<div class="bdy-container">
 		<form:form commandName="newRoom" id="roomForm" enctype="multipart/form-data">
 		<div class="leftsec" style="height: auto !important;">
