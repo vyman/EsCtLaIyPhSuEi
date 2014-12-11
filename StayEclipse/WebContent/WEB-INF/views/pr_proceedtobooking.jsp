@@ -1,4 +1,6 @@
 <!doctype html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <html>
 <head>
 <meta charset="utf-8">
@@ -7,9 +9,7 @@
 </head>
 
 <body>
-<div class="headerBg"><div class="header"><div class="logo"><img src="resources/images/logo-huigere.png" /></div>
-<div class="loginbox btn-1">Welcome: Username &nbsp; | &nbsp;  <a href="#">Logout</a></div></div>
-     </div>
+<%@include file="pr_header.jsp" %>
 <div class="bdy-container">
   <h2 class="bdyhd1">Proceed to Booking</h2> 
 <div class="bookingleftsec">
