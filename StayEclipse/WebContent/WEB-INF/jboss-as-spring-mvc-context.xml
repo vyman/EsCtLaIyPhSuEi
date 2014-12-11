@@ -15,7 +15,7 @@
 		<property name="suffix" value=".jsp"/>
 	</bean>
 
-	<!-- <mvc:resources mapping="/static/**" location="/" /> -->
+	<mvc:resources mapping="/static/**" location="/" />
 	
 	<bean id="multipartResolver"
         class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
