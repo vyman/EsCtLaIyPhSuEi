@@ -9,5 +9,8 @@
                         <a href="#"><img src="<c:url value="/static/resources/images/soc_icon_4.png"/>" alt=""></a>
                     </div>
  </div>
+ 
   </div>
+  
+  
   
