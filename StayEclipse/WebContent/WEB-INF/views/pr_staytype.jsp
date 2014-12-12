@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8">
 <title>Huigere</title>
-<link href="resources/css/inner-style.css" rel="stylesheet" type="text/css" />
+<link href="<c:url value="/static/resources/css/inner-style.css" />" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -31,7 +31,7 @@ Stay Type: <select name='staytype' id='staytype' >
 
 </div>  
 <div class="cenDivBdr">
-<a href="#" class="submit_btn">Next <img src="resources/images/arrow2.png" alt="" class="no_resize"></a> 
+<a href="#" class="submit_btn">Next <img src="<c:url value="/static/resources/images/arrow2.png" />" alt="" class="no_resize"></a> 
 </div>  
 </div>
   
