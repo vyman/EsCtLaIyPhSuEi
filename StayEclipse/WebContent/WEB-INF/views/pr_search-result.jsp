@@ -5,23 +5,23 @@
 <head>
 <meta charset="utf-8">
 <title>Huigere</title>
-<link href="resources/css/inner-style.css" rel="stylesheet" type="text/css" />
+<link href="<c:url value="/static/resources/css/inner-style.css" />" rel="stylesheet" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap styles -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <!-- Generic page styles -->
-<link rel="stylesheet" href="resources/css/style.css">
+<link rel="stylesheet" href="<c:url value="/static/resources/css/style.css" />" >
 <!-- blueimp Gallery styles -->
 <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
 <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
-<link rel="stylesheet" href="resources/css/jquery.fileupload.css">
-<link rel="stylesheet" href="resources/css/jquery.fileupload-ui.css">
+<link rel="stylesheet" href="<c:url value="/static/resources/css/jquery.fileupload.css" />">
+<link rel="stylesheet" href="<c:url value="/static/resources/css/jquery.fileupload-ui.css" />" >
 <!-- CSS adjustments for browsers with JavaScript disabled -->
 <noscript>
-<link rel="stylesheet" href="resources/css/jquery.fileupload-noscript.css">
+<link rel="stylesheet" href="<c:url value="/static/resources/css/jquery.fileupload-noscript.css" />" >
 </noscript>
 <noscript>
-<link rel="stylesheet" href="resources/css/jquery.fileupload-ui-noscript.css">
+<link rel="stylesheet" href="<c:url value="/static/resources/css/jquery.fileupload-ui-noscript.css" />" >
 </noscript>
 </head>
 <body>
@@ -86,35 +86,35 @@
         
         <table width="100%">
         <tr>
-          <td width="25%"><img src="resources/images/s1.jpg" width="156" height="117" /></td>
+          <td width="25%"><img src="<c:url value="/static/resources/images/s1.jpg" />" width="156" height="117" /></td>
           <td width="25%">Banngalore Hotel</td>
           <td width="15%">A/C Delux</td>
           <td width="15%">$400</td>
           <td width="20%"><button type="button" class="btn btn-sm btn-success">Book Now</button></td>
         </tr>
        <tr>
-          <td width="25%"><img src="resources/images/s2.jpg" width="156" height="117" /></td>
+          <td width="25%"><img src="<c:url value="/static/resources/images/s2.jpg" />" width="156" height="117" /></td>
           <td width="25%">Banngalore Hotel</td>
           <td width="15%">A/C Delux</td>
           <td width="15%">$400</td>
           <td width="20%"><button type="button" class="btn btn-sm btn-success">Book Now</button></td>
         </tr>
         <tr>
-          <td width="25%"><img src="resources/images/s3.jpg" width="156" height="117" /></td>
+          <td width="25%"><img src="<c:url value="/static/resources/images/s3.jpg"/>" width="156" height="117" /></td>
           <td width="25%">Banngalore Hotel</td>
           <td width="15%">A/C Delux</td>
           <td width="15%">$400</td>
           <td width="20%"><button type="button" class="btn btn-sm btn-success">Book Now</button></td>
         </tr>
         <tr>
-          <td width="25%"><img src="resources/images/s1.jpg" width="156" height="117" /></td>
+          <td width="25%"><img src="<c:url value="/static/resources/images/s1.jpg" />" width="156" height="117" /></td>
           <td width="25%">Banngalore Hotel</td>
           <td width="15%">A/C Delux</td>
           <td width="15%">$400</td>
           <td width="20%"><button type="button" class="btn btn-sm btn-success">Book Now</button></td>
         </tr>
         <tr>
-          <td width="25%"><img src="resources/images/s2.jpg" width="156" height="117" /></td>
+          <td width="25%"><img src="<c:url value="/static/resources/images/s2.jpg" />" width="156" height="117" /></td>
           <td width="25%">Banngalore Hotel</td>
           <td width="15%">A/C Delux</td>
           <td width="15%">$400</td>
@@ -127,7 +127,7 @@
   <div class="cenDivBdr">
   <div class="pluginDiv">Plug -in Comes here</div>
   
-    <div class="rgt"> <a href="suite-available.html" class="submit_btn rgt">Next <img src="resources/images/arrow2.png" alt="" class="no_resize"></a> </div>
+    <div class="rgt"> <a href="suite-available.html" class="submit_btn rgt">Next <img src="<c:url value="/static/resources/images/arrow2.png" />" alt="" class="no_resize"></a> </div>
   </div>
 </div>
 
