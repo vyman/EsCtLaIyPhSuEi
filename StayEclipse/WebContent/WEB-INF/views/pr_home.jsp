@@ -1,15 +1,17 @@
 <!doctype html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Huigere</title>
-<link href="resources/css/reset.css" type="text/css" rel="stylesheet" />
-<link href="resources/css/home-style.css" type="text/css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" media="all" href="resources/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="resources/css/jgallery.min.css" />
-    <script type="text/javascript" src="resources/js/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="resources/js/tinycolor-0.9.16.min.js"></script>
-    <script type="text/javascript" src="resources/js/jgallery.min.js"></script>
+<link href="<c:url value="/static/resources/css/reset.css" />" type="text/css" rel="stylesheet" />
+<link href="<c:url value="/static/resources/css/home-style.css" />" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" media="all" href="<c:url value="/static/resources/css/font-awesome.min.css" />" />
+    <link rel="stylesheet" type="text/css" media="all" href="<c:url value="/static/resources/css/jgallery.min.css" />" />
+    <script type="text/javascript" src="<c:url value="/static/resources/js/jquery-2.0.3.min.js" />" ></script>
+    <script type="text/javascript" src="<c:url value="/static/resources/js/tinycolor-0.9.16.min.js" />"></script>
+    <script type="text/javascript" src="<c:url value="/static/resources/js/jgallery.min.js" />" ></script>
     <script type="text/javascript">
     $( function() {
         $( '#gallery' ).jGallery( {
@@ -20,8 +22,8 @@
 </head>
 
 <body>
-<div class="headerBg"><div class="header"><div class="logo"><img src="resources/images/logo-huigere.png" /></div>
-<div class="loginbox btn-1"><form> <input name="username" type="text"  id="username" value="User Name" onblur="if (this.value == '') {this.value = 'User Name';}"  onfocus="if (this.value == 'User Name') {this.value = '';}" /> <input name="password" type="text"  id="password" value="Password" onblur="if (this.value == '') {this.value = 'Password';}"  onfocus="if (this.value == 'Password') {this.value = '';}" /> <a href="#" class="submit_btn">Submit <img src="resources/images/arrow2.png" alt="" class="no_resize"></a></form></div></div>
+<div class="headerBg"><div class="header"><div class="logo"><img src="<c:url value="/static/resources/images/logo-huigere.png" />" /></div>
+<div class="loginbox btn-1"><form> <input name="username" type="text"  id="username" value="User Name" onblur="if (this.value == '') {this.value = 'User Name';}"  onfocus="if (this.value == 'User Name') {this.value = '';}" /> <input name="password" type="text"  id="password" value="Password" onblur="if (this.value == '') {this.value = 'Password';}"  onfocus="if (this.value == 'Password') {this.value = '';}" /> <a href="#" class="submit_btn">Submit <img src="<c:url value="/static/resources/images/arrow2.png" />" alt="" class="no_resize"></a></form></div></div>
      </div>
 
 
@@ -51,10 +53,10 @@
      <!--banner -->
      <div style="height:auto !important;">  
      <div style="float:left;"> <div id="gallery">
-            <img src="resources/images/ban1.jpg"  alt="" />
-            <img src="resources/images/ban2.jpg" alt="" />
-            <img src="resources/images/ban3.jpg" alt="" />
-            <img src="resources/images/img1.jpg" alt="" />
+            <img src="<c:url value="/static/resources/images/ban1.jpg" />"  alt="" />
+            <img src="<c:url value="/static/resources/images/ban2.jpg" />" alt="" />
+            <img src="<c:url value="/static/resources/images/ban3.jpg" />" alt="" />
+            <img src="<c:url value="/static/resources/images/img1.jpg" />" alt="" />
            
         </div></div> 
      <div class="red-band"><div class="red-dash-border"></div>
