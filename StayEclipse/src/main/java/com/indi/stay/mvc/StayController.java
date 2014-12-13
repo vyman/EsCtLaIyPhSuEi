@@ -85,6 +85,4 @@ public class StayController {
 			return "redirect:/home";
 		}
 	}
-
-
 }
