@@ -39,7 +39,7 @@ public class HomeController {
 			model.addAttribute("newRoom", new StaySuite());
 			model.addAttribute("facilities", facilities);
 			model.addAttribute("suiteTypes", suiteTypes);
-			return "pr_addroom";
+			return "pr_home";
 	    }
 	 
 	 @RequestMapping(method=RequestMethod.GET,value="/blueimp")
