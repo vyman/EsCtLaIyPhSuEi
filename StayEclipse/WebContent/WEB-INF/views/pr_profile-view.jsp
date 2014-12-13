@@ -131,7 +131,7 @@ $( ".datepicker" ).datepicker();
                 <div class="col-sm-4  col-xs-4"><a data-slide-index="1" href=""><img src="<c:url value="/static/resources/images/s2.jpg" />" height="72" /></a></div>
                 <div class="col-sm-4  col-xs-4"><a data-slide-index="2" href=""><img src="<c:url value="/static/resources/images/s3.jpg" />" height="72" /></a></div>
                 <div class="col-sm-4  col-xs-4"><a data-slide-index="0" href=""><img src="<c:url value="/static/resources/images/s1.jpg" />" height="72" /></a> </div>
-                <div class="col-sm-4   col-xs-4"><a data-slide-index="1" href=""><img src="<c:url value="/static/resources/images/s2.jpg" />" height="72" /></a></div>
+                <div class="col-sm-4  col-xs-4"><a data-slide-index="1" href=""><img src="<c:url value="/static/resources/images/s2.jpg" />" height="72" /></a></div>
                 
               </div>
               <div class="butdiv">
@@ -146,15 +146,15 @@ $( ".datepicker" ).datepicker();
             </div>
             <div class="panel-body">
             <div class="col-xs-12">
-              <div class="col-sm-4   col-xs-4"><a data-slide-index="0" href=""><img src="<c:url value="/static/resources/images/s1.jpg" />" height="72" /></a></div>
-              <div class="col-sm-4   col-xs-4"><a data-slide-index="1" href=""><img src="<c:url value="/static/resources/images/s2.jpg" />" height="72" /></a></div>
+              <div class="col-sm-4  col-xs-4"><a data-slide-index="0" href=""><img src="<c:url value="/static/resources/images/s1.jpg" />" height="72" /></a></div>
+              <div class="col-sm-4  col-xs-4"><a data-slide-index="1" href=""><img src="<c:url value="/static/resources/images/s2.jpg" />" height="72" /></a></div>
               <div class="col-sm-4  col-xs-4"><a data-slide-index="2" href=""><img src="<c:url value="/static/resources/images/s3.jpg" />" height="72" /></a></div>
               <div class="col-sm-4  col-xs-4"><a data-slide-index="0" href=""><img src="<c:url value="/static/resources/images/s1.jpg" />" height="72" /></a> </div>
               <div class="col-sm-4  col-xs-4"><a data-slide-index="1" href=""><img src="<c:url value="/static/resources/images/s2.jpg" />" height="72" /></a></div>
-               <div class="col-sm-4  col-xs-4"><a data-slide-index="2" href=""><img src="<c:url value="/static/resources/images/s3.jpg" />" height="72" /></a></div>
-               <div class="col-sm-4  col-xs-4"><a data-slide-index="0" href=""><img src="<c:url value="/static/resources/images/s1.jpg" />" height="72" /></a> </div>
+              <div class="col-sm-4  col-xs-4"><a data-slide-index="2" href=""><img src="<c:url value="/static/resources/images/s3.jpg" />" height="72" /></a></div>
+              <div class="col-sm-4  col-xs-4"><a data-slide-index="0" href=""><img src="<c:url value="/static/resources/images/s1.jpg" />" height="72" /></a> </div>
               <div class="col-sm-4  col-xs-4"><a data-slide-index="1" href=""><img src="<c:url value="/static/resources/images/s2.jpg" />" height="72" /></a></div>
-               <div class="col-sm-4  col-xs-4"><a data-slide-index="2" href=""><img src="<c:url value="/static/resources/images/s3.jpg" />" height="72" /></a></div>
+              <div class="col-sm-4  col-xs-4"><a data-slide-index="2" href=""><img src="<c:url value="/static/resources/images/s3.jpg" />" height="72" /></a></div>
               </div>
               <div class="butdiv">
                   <button type="button" class="btn btn-sm btn-primary">Edit</button> </div>
