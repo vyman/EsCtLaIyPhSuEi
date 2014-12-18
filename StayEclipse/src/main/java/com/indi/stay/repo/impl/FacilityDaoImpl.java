@@ -1,4 +1,4 @@
-package com.indi.stay.repo;
+package com.indi.stay.repo.impl;
 
 import java.util.List;
 
@@ -13,23 +13,24 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.indi.stay.domain.Facility;
 import com.indi.stay.domain.SuiteType;
-import com.indi.stay.repo.SuiteTypeDao;
+import com.indi.stay.repo.FacilityDao;
 
 
 @Repository
 @Transactional
-public class SuiteTypeDaoImpl implements SuiteTypeDao {
+public class FacilityDaoImpl implements FacilityDao {
+	
 
 
-
-	private static final Log log = LogFactory.getLog(SuiteTypeDaoImpl.class);
+	private static final Log log = LogFactory.getLog(FacilityDaoImpl.class);
 
 	@PersistenceContext
 	private EntityManager entityManager;
 
-	public void persist(SuiteType transientInstance) {
-		log.debug("persisting SuiteType instance");
+	public void persist(Facility transientInstance) {
+		log.debug("persisting Facility instance");
 		try {
 			entityManager.persist(transientInstance);
 			log.debug("persist successful");
@@ -39,8 +40,8 @@ public class SuiteTypeDaoImpl implements SuiteTypeDao {
 		}
 	}
 
-	public void remove(SuiteType persistentInstance) {
-		log.debug("removing SuiteType instance");
+	public void remove(Facility persistentInstance) {
+		log.debug("removing Facility instance");
 		try {
 			entityManager.remove(persistentInstance);
 			log.debug("remove successful");
@@ -50,10 +51,10 @@ public class SuiteTypeDaoImpl implements SuiteTypeDao {
 		}
 	}
 
-	public SuiteType merge(SuiteType detachedInstance) {
-		log.debug("merging SuiteType instance");
+	public Facility merge(Facility detachedInstance) {
+		log.debug("merging Facility instance");
 		try {
-			SuiteType result = entityManager.merge(detachedInstance);
+			Facility result = entityManager.merge(detachedInstance);
 			log.debug("merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -62,10 +63,10 @@ public class SuiteTypeDaoImpl implements SuiteTypeDao {
 		}
 	}
 
-	public SuiteType findById(int id) {
-		log.debug("getting SuiteType instance with id: " + id);
+	public Facility findById(int id) {
+		log.debug("getting Facility instance with id: " + id);
 		try {
-			SuiteType instance = entityManager.find(SuiteType.class, id);
+			Facility instance = entityManager.find(Facility.class, id);
 			log.debug("get successful");
 			return instance;
 		} catch (RuntimeException re) {
@@ -74,12 +75,13 @@ public class SuiteTypeDaoImpl implements SuiteTypeDao {
 		}
 	}
 
-	public List<SuiteType> findAllOrderedByName()
+	@Override
+	public List<Facility> findAllOrderedByName()
 	{
 		CriteriaBuilder cb = entityManager.getCriteriaBuilder();
-		CriteriaQuery<SuiteType> criteria = cb.createQuery(SuiteType.class);
-		Root<SuiteType> suiteTypeRoot = criteria.from(SuiteType.class);
-		criteria.select(suiteTypeRoot).orderBy(cb.asc(suiteTypeRoot.get("type")));
+		CriteriaQuery<Facility> criteria = cb.createQuery(Facility.class);
+		Root<Facility> facilityRoot = criteria.from(Facility.class);
+		criteria.select(facilityRoot).orderBy(cb.asc(facilityRoot.get("equipment")));
 		return entityManager.createQuery(criteria).getResultList();
 	}
 

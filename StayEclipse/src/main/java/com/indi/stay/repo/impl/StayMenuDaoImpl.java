@@ -1,4 +1,4 @@
-package com.indi.stay.repo;
+package com.indi.stay.repo.impl;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.indi.stay.domain.StayMenu;
+import com.indi.stay.repo.StayMenuDao;
 
 
 

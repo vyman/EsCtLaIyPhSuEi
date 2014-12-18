@@ -1,4 +1,4 @@
-package com.indi.stay.repo;
+package com.indi.stay.repo.impl;
 
 import java.util.List;
 
@@ -12,6 +12,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.indi.stay.domain.StaySuite;
+import com.indi.stay.repo.StaySuiteDao;
 
 
 

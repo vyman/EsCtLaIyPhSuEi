@@ -1,4 +1,4 @@
-package com.indi.stay.repo;
+package com.indi.stay.repo.impl;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -8,21 +8,22 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.indi.stay.domain.StayPhotos;
-import com.indi.stay.repo.StayPhotoDao;
+import com.indi.stay.domain.StayBookingDetails;
+import com.indi.stay.repo.StayBookingDetailsDao;
 
 
 @Repository
 @Transactional
-public class StayPhotoDaoImpl implements StayPhotoDao {
-	
-	private static final Log log = LogFactory.getLog(StayPhotoDaoImpl.class);
+public class StayBookingDetailsDaoImpl implements StayBookingDetailsDao {
+
+	private static final Log log = LogFactory
+			.getLog(StayBookingDetailsDaoImpl.class);
 
 	@PersistenceContext
 	private EntityManager entityManager;
 
-	public void persist(StayPhotos transientInstance) {
-		log.debug("persisting StayPhotos instance");
+	public void persist(StayBookingDetails transientInstance) {
+		log.debug("persisting StayBookingDetails instance");
 		try {
 			entityManager.persist(transientInstance);
 			log.debug("persist successful");
@@ -32,8 +33,8 @@ public class StayPhotoDaoImpl implements StayPhotoDao {
 		}
 	}
 
-	public void remove(StayPhotos persistentInstance) {
-		log.debug("removing StayPhotos instance");
+	public void remove(StayBookingDetails persistentInstance) {
+		log.debug("removing StayBookingDetails instance");
 		try {
 			entityManager.remove(persistentInstance);
 			log.debug("remove successful");
@@ -43,10 +44,10 @@ public class StayPhotoDaoImpl implements StayPhotoDao {
 		}
 	}
 
-	public StayPhotos merge(StayPhotos detachedInstance) {
-		log.debug("merging StayPhotos instance");
+	public StayBookingDetails merge(StayBookingDetails detachedInstance) {
+		log.debug("merging StayBookingDetails instance");
 		try {
-			StayPhotos result = entityManager.merge(detachedInstance);
+			StayBookingDetails result = entityManager.merge(detachedInstance);
 			log.debug("merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -55,10 +56,11 @@ public class StayPhotoDaoImpl implements StayPhotoDao {
 		}
 	}
 
-	public StayPhotos findById(int id) {
-		log.debug("getting StayPhotos instance with id: " + id);
+	public StayBookingDetails findById(int id) {
+		log.debug("getting StayBookingDetails instance with id: " + id);
 		try {
-			StayPhotos instance = entityManager.find(StayPhotos.class, id);
+			StayBookingDetails instance = entityManager.find(
+					StayBookingDetails.class, id);
 			log.debug("get successful");
 			return instance;
 		} catch (RuntimeException re) {
@@ -66,5 +68,4 @@ public class StayPhotoDaoImpl implements StayPhotoDao {
 			throw re;
 		}
 	}
-
 }

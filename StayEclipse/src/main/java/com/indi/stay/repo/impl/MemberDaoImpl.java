@@ -1,4 +1,4 @@
-package com.indi.stay.repo;
+package com.indi.stay.repo.impl;
 
 import java.util.List;
 
@@ -8,6 +8,8 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
 import com.indi.stay.domain.Member;
+import com.indi.stay.repo.MemberDao;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;

@@ -7,6 +7,37 @@
 <title>Huigere</title>
 <link href="<c:url value="/static/resources/css/inner-style.css"/>" rel="stylesheet"
 	type="text/css" />
+	
+<script type="text/javascript" src="<c:url value="/static/resources/jQueryAssets/jquery-1.8.3.min.js"></c:url>"></script>
+	
+<script type="text/javascript">
+$(function() {
+    $("#profileImagePic").on("change", function()
+    {
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+ 
+        if (/^image/.test( files[0].type)){ // only image file
+            var reader = new FileReader(); // instance of the FileReader
+            reader.readAsDataURL(files[0]); // read the local file
+ 
+            reader.onloadend = function(){ // set image data as background of div
+                $("#imagePreview").css("background-image", "url("+this.result+")");
+            }
+        }
+    });
+});
+</script>
+<!-- <style>
+#imagePreview {
+    width: 180px;
+    height: 180px;
+    background-position: center center;
+    background-size: cover;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+    display: inline-block;
+}
+</style> -->
 </head>
 
 <body>
@@ -52,9 +83,7 @@
 			<div class="rightsec">
 				<div style="text-align: center;">
 					<h2>Select Profile Photo</h2>
-					<div class="profilephoto"></div>
-					<input type="text" /><br> <br> <a href="#"
-						class="gen_btn">Browse</a>
+					<div class="profilephoto" id="imagePreview"></div>
 				</div>
 				<form:input type="file" name="profileImagePic" id="profileImagePic" path="profileImagePic"/>
 				<form:errors class="invalid" path="profileImagePic" />

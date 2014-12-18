@@ -13,23 +13,23 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.indi.stay.domain.Facility;
 import com.indi.stay.domain.SuiteType;
+import com.indi.stay.repo.SuiteTypeDao;
 
 
 @Repository
 @Transactional
-public class FacilityDaoImpl implements FacilityDao {
-	
+public class SuiteTypeDaoImpl implements SuiteTypeDao {
 
 
-	private static final Log log = LogFactory.getLog(FacilityDaoImpl.class);
+
+	private static final Log log = LogFactory.getLog(SuiteTypeDaoImpl.class);
 
 	@PersistenceContext
 	private EntityManager entityManager;
 
-	public void persist(Facility transientInstance) {
-		log.debug("persisting Facility instance");
+	public void persist(SuiteType transientInstance) {
+		log.debug("persisting SuiteType instance");
 		try {
 			entityManager.persist(transientInstance);
 			log.debug("persist successful");
@@ -39,8 +39,8 @@ public class FacilityDaoImpl implements FacilityDao {
 		}
 	}
 
-	public void remove(Facility persistentInstance) {
-		log.debug("removing Facility instance");
+	public void remove(SuiteType persistentInstance) {
+		log.debug("removing SuiteType instance");
 		try {
 			entityManager.remove(persistentInstance);
 			log.debug("remove successful");
@@ -50,10 +50,10 @@ public class FacilityDaoImpl implements FacilityDao {
 		}
 	}
 
-	public Facility merge(Facility detachedInstance) {
-		log.debug("merging Facility instance");
+	public SuiteType merge(SuiteType detachedInstance) {
+		log.debug("merging SuiteType instance");
 		try {
-			Facility result = entityManager.merge(detachedInstance);
+			SuiteType result = entityManager.merge(detachedInstance);
 			log.debug("merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -62,10 +62,10 @@ public class FacilityDaoImpl implements FacilityDao {
 		}
 	}
 
-	public Facility findById(int id) {
-		log.debug("getting Facility instance with id: " + id);
+	public SuiteType findById(int id) {
+		log.debug("getting SuiteType instance with id: " + id);
 		try {
-			Facility instance = entityManager.find(Facility.class, id);
+			SuiteType instance = entityManager.find(SuiteType.class, id);
 			log.debug("get successful");
 			return instance;
 		} catch (RuntimeException re) {
@@ -74,13 +74,12 @@ public class FacilityDaoImpl implements FacilityDao {
 		}
 	}
 
-	@Override
-	public List<Facility> findAllOrderedByName()
+	public List<SuiteType> findAllOrderedByName()
 	{
 		CriteriaBuilder cb = entityManager.getCriteriaBuilder();
-		CriteriaQuery<Facility> criteria = cb.createQuery(Facility.class);
-		Root<Facility> facilityRoot = criteria.from(Facility.class);
-		criteria.select(facilityRoot).orderBy(cb.asc(facilityRoot.get("equipment")));
+		CriteriaQuery<SuiteType> criteria = cb.createQuery(SuiteType.class);
+		Root<SuiteType> suiteTypeRoot = criteria.from(SuiteType.class);
+		criteria.select(suiteTypeRoot).orderBy(cb.asc(suiteTypeRoot.get("type")));
 		return entityManager.createQuery(criteria).getResultList();
 	}
 

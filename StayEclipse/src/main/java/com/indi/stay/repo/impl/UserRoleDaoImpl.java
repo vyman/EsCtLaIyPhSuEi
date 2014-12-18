@@ -1,28 +1,29 @@
 package com.indi.stay.repo;
 
 import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.indi.stay.domain.StayBookingDetails;
-
+import com.indi.stay.domain.UserRole;
+import com.indi.stay.repo.UserRoleDao;
 
 @Repository
 @Transactional
-public class StayBookingDetailsDaoImpl implements StayBookingDetailsDao {
+public class UserRoleDaoImpl implements UserRoleDao{
 
-	private static final Log log = LogFactory
-			.getLog(StayBookingDetailsDaoImpl.class);
 
-	@PersistenceContext
+	private static final Log log = LogFactory.getLog(UserRoleDaoImpl.class);
+
+	@Autowired
 	private EntityManager entityManager;
 
-	public void persist(StayBookingDetails transientInstance) {
-		log.debug("persisting StayBookingDetails instance");
+	@Override
+	public void persist(UserRole transientInstance) {
+		log.debug("persisting Userrole instance");
 		try {
 			entityManager.persist(transientInstance);
 			log.debug("persist successful");
@@ -32,8 +33,8 @@ public class StayBookingDetailsDaoImpl implements StayBookingDetailsDao {
 		}
 	}
 
-	public void remove(StayBookingDetails persistentInstance) {
-		log.debug("removing StayBookingDetails instance");
+	public void remove(UserRole persistentInstance) {
+		log.debug("removing Userrole instance");
 		try {
 			entityManager.remove(persistentInstance);
 			log.debug("remove successful");
@@ -43,10 +44,10 @@ public class StayBookingDetailsDaoImpl implements StayBookingDetailsDao {
 		}
 	}
 
-	public StayBookingDetails merge(StayBookingDetails detachedInstance) {
-		log.debug("merging StayBookingDetails instance");
+	public UserRole merge(UserRole detachedInstance) {
+		log.debug("merging Userrole instance");
 		try {
-			StayBookingDetails result = entityManager.merge(detachedInstance);
+			UserRole result = entityManager.merge(detachedInstance);
 			log.debug("merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -55,11 +56,10 @@ public class StayBookingDetailsDaoImpl implements StayBookingDetailsDao {
 		}
 	}
 
-	public StayBookingDetails findById(int id) {
-		log.debug("getting StayBookingDetails instance with id: " + id);
+	public UserRole findById(int id) {
+		log.debug("getting Userrole instance with id: " + id);
 		try {
-			StayBookingDetails instance = entityManager.find(
-					StayBookingDetails.class, id);
+			UserRole instance = entityManager.find(UserRole.class, id);
 			log.debug("get successful");
 			return instance;
 		} catch (RuntimeException re) {
@@ -67,4 +67,5 @@ public class StayBookingDetailsDaoImpl implements StayBookingDetailsDao {
 			throw re;
 		}
 	}
+
 }
