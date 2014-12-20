@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.indi.stay.domain.UserRole;
+import com.indi.stay.repo.UserRoleDao;
 
 @Repository
 @Transactional
