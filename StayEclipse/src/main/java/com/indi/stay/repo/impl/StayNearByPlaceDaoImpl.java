@@ -1,5 +1,4 @@
 package com.indi.stay.repo.impl;
-
 import java.util.List;
 
 import javax.persistence.EntityManager;
