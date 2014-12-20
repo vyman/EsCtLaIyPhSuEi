@@ -28,7 +28,7 @@ $(function() {
     });
 });
 </script>
-<!-- <style>
+<style>
 #imagePreview {
     width: 180px;
     height: 180px;
@@ -37,7 +37,7 @@ $(function() {
     -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
     display: inline-block;
 }
-</style> -->
+</style>
 </head>
 
 <body>
