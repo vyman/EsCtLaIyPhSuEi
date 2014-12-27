@@ -19,32 +19,8 @@
 <img src="<c:url value="/static/resources/images/s3.jpg" />" />
 </div>    
 <div class="suiterightsec"><h2>Menus & Prices</h2>
-<table  cellpadding="5" cellspacing="0" border="0">
-<tr>
-<td><img src="<c:url value="/static/resources/images/page1_pic1.jpg" />" width="156" height="117" /></td>
-<td>Text text text</td>
-<td><img src="<c:url value="/static/resources/images/page1_pic1-01.jpg" />" width="156" height="117" /></td>
-<td>Text text text</td>
-</tr>
-<tr>
-<td>Text text text</td>
-<td><img src="<c:url value="/static/resources/images/page1_pic2.jpg" />" width="156" height="117" /></td>
-<td>Text text text</td>
-<td><img src="<c:url value="/static/resources/images/page1_pic1-02.jpg" />" width="156" height="117" /></td>
-</tr>
-<tr>
-<td><img src="<c:url value="/static/resources/images/page1_pic3.jpg" />" width="156" height="117" /></td>
-<td>Text text text</td>
-<td><img src="<c:url value="/static/resources/images/page1_pic1-03.jpg" />" width="156" height="117" /></td>
-<td>Text text text</td>
-</tr>
-<tr>
-<td>Text text text</td>
-<td><img src="<c:url value="/static/resources/images/page1_pic4.jpg" />" width="156" height="117" /></td>
-<td>Text text text</td>
-<td><img src="<c:url value="/static/resources/images/page1_pic1-04.jpg" />" width="156" height="117" /></td>
-</tr>
-</table>
+<img src="<c:url value="/static/resources/images/page1_pic1.jpg.jpg"/>" width="800" height="400" /></td>
+
 
 </div>
 
