@@ -19,9 +19,7 @@
 <img src="<c:url value="/static/resources/images/s3.jpg" />" />
 </div>    
 <div class="suiterightsec"><h2>Menus & Prices</h2>
-<img src="<c:url value="/static/resources/images/page1_pic1.jpg.jpg"/>" width="800" height="400" /></td>
-
-
+<img src="<c:url value="/static/resources/images/pic2.jpg"/>" width="800" height="400" /></td>
 </div>
 
 <div class="suiterightsec"><h2>Places nearby</h2>
