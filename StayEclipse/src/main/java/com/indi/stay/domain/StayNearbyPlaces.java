@@ -90,7 +90,7 @@ public class StayNearbyPlaces implements java.io.Serializable {
 		this.distance = distance;
 	}
 
-	@Column(name = "photo", nullable = false, length = 50)
+	@Column(name = "photo", nullable = false, length = 200)
 	public String getPhoto() {
 		return this.photo;
 	}

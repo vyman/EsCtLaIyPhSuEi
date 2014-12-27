@@ -31,15 +31,18 @@ public class HomeController {
 	 @RequestMapping(method=RequestMethod.GET)
 	    public String displayFacilityPage(Model model)
 	    {
-//	        model.addAttribute("staysByRating", stayService.findAllOrderedByRating());
-//	        return "pr_search-result";
+////	        model.addAttribute("staysByRating", stayService.findAllOrderedByRating());
+////	        return "pr_search-result";
+//		 
+//		 List<SuiteType> suiteTypes= suiteTypeService.findAllOrderedByName();
+//			List<Facility> facilities= facilityService.findAllOrderedByName();
+//			model.addAttribute("newRoom", new StaySuite());
+//			model.addAttribute("facilities", facilities);
+			model.addAttribute("stays", stayService.findAllOrderedByRating());
 		 
-		 List<SuiteType> suiteTypes= suiteTypeService.findAllOrderedByName();
-			List<Facility> facilities= facilityService.findAllOrderedByName();
-			model.addAttribute("newRoom", new StaySuite());
-			model.addAttribute("facilities", facilities);
-			model.addAttribute("suiteTypes", suiteTypes);
-			return "pr_addroom";
+			return "pr_home";
+		 
+		 
 	    }
 	 
 	 @RequestMapping(method=RequestMethod.GET,value="/blueimp")

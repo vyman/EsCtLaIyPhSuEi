@@ -65,7 +65,7 @@ public class StaySuitePhotos implements java.io.Serializable {
 		this.staysuite = staysuite;
 	}
 
-	@Column(name = "imagepath", nullable = false, length = 50)
+	@Column(name = "imagepath", nullable = false, length = 200)
 	public String getImagepath() {
 		return this.imagepath;
 	}

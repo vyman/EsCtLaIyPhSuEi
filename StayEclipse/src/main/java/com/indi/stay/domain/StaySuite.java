@@ -37,6 +37,7 @@ public class StaySuite implements java.io.Serializable {
 	private int numberOfAvilableRooms;
 	private Double price;
 	private String suiteCode;
+	private String suiteProfilePic;
 	private List<Facility> facilities = new ArrayList<Facility>();
 	private Set<StayBookingDetails> stayBookingDetailses = new HashSet<StayBookingDetails>(0);
 	private Set<StaySuitePhotos> staysuitephotoses = new HashSet<StaySuitePhotos>(0);
@@ -164,4 +165,15 @@ public class StaySuite implements java.io.Serializable {
 	public void setStaysuitephotoses(Set<StaySuitePhotos> staysuitephotoses) {
 		this.staysuitephotoses = staysuitephotoses;
 	}
+
+	@Column(name = "picpath", nullable = false, length = 200)
+	public String getSuiteProfilePic() {
+		return suiteProfilePic;
+	}
+
+	public void setSuiteProfilePic(String suiteProfilePic) {
+		this.suiteProfilePic = suiteProfilePic;
+	}
+	
+	
 }

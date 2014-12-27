@@ -71,6 +71,9 @@ public class StayController {
 			return "pr_stayinfo";
 		}
 	}
+	
+	//Method to display stay suites avilable,menu,nearby place based on stay ID
+	
 	@RequestMapping(method=RequestMethod.GET,value="/getStaySuitesAndMenu")
 	public String getStaySuitesAndMenu(@RequestParam("stayId") Integer stayId,Model model)
 	{
@@ -79,7 +82,7 @@ public class StayController {
 			model.addAttribute("staySuites", staySuiteService.findstaySuitesByStayId(stayId));
 			model.addAttribute("stayMenu", stayMenuService.findByStayId(stayId));
 			model.addAttribute("stayNearByPlaces", stayNearByPlaceService.stayFindNearByPlacesByStayId(stayId));
-			return "staySuitesAndMenu";
+			return "pr_suiteavilable";
 		}
 		else {
 			return "redirect:/home";

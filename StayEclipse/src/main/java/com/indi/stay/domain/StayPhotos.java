@@ -56,7 +56,7 @@ public class StayPhotos implements java.io.Serializable {
 		this.stay = stay;
 	}
 
-	@Column(name = "photo", nullable = false, length = 50)
+	@Column(name = "photo", nullable = false, length = 200)
 	public String getPhoto() {
 		return this.photo;
 	}

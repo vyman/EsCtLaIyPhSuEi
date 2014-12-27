@@ -33,9 +33,16 @@ public class StaySuiteController {
 	    public String displayStaySuitePage(Model model)
 	    {
 	        model.addAttribute("newStaySuite", new StaySuite());
-	        return "staySuite";
+	        return "pr_suiteavilable";
 	    }
 	
+	 @RequestMapping(method=RequestMethod.GET ,value="/getSuiteDetailsByStayId")
+	    public String displayStaySuitesForStay(Model model)
+	    {
+	        model.addAttribute("newStaySuite", new StaySuite());
+	        return "pr_suiteavilable";
+	    }
+	 
 	 @RequestMapping(method=RequestMethod.POST)
 	    public String registerNewStaySuite(@Valid @ModelAttribute("newStaySuite") StaySuite newStaySuite, BindingResult result, Model model)
 	    {

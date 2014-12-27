@@ -53,11 +53,9 @@
      <!--banner -->
      <div style="height:auto !important;">  
      <div style="float:left;"> <div id="gallery">
-            <img src="<c:url value="/static/resources/images/ban1.jpg" />"  alt="" />
-            <img src="<c:url value="/static/resources/images/ban2.jpg" />" alt="" />
-            <img src="<c:url value="/static/resources/images/ban3.jpg" />" alt="" />
-            <img src="<c:url value="/static/resources/images/img1.jpg" />" alt="" />
-           
+            <c:forEach items="${stays}" var="stay" >				
+			<img src="${ stay.profileImgPath}" />
+			</c:forEach>
         </div></div> 
      <div class="red-band"><div class="red-dash-border"></div>
      <div class="text-4 spacer">Book Now <br>
@@ -71,7 +69,7 @@ To Get Best Price!</div>
                 
                 <div class="block-4"><div class="dash-border"></div>
                     <a href="#">
-                       <div class="right-1"><p> BEST!<br>
+                       <div class="right-1" onclick="/StayEclipse/getBestOffers"><p> BEST!<br>
                         Offers</p></div>
                     </a>
                 </div>

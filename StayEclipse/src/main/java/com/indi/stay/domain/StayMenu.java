@@ -56,7 +56,7 @@ public class StayMenu implements java.io.Serializable {
 		this.stay = stay;
 	}
 
-	@Column(name = "menuphoto", nullable = false, length = 50)
+	@Column(name = "menuphoto", nullable = false, length = 200)
 	public String getMenuphoto() {
 		return this.menuphoto;
 	}
