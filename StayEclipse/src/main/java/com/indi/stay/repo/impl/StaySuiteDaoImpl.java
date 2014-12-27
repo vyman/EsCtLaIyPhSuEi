@@ -1,4 +1,4 @@
-package com.indi.stay.repo;
+package com.indi.stay.repo.impl;
 
 import java.util.List;
 
@@ -11,23 +11,22 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.indi.stay.domain.StayNearbyPlaces;
-import com.indi.stay.repo.StayNearByPlaceDao;
+import com.indi.stay.domain.StaySuite;
+import com.indi.stay.repo.StaySuiteDao;
+
 
 
 @Repository
 @Transactional
-public class StayNearByPlaceDaoImpl implements StayNearByPlaceDao {
+public class StaySuiteDaoImpl implements StaySuiteDao{
 	
-
-
-	private static final Log log = LogFactory.getLog(StayNearByPlaceDaoImpl.class);
+	private static final Log log = LogFactory.getLog(StaySuiteDaoImpl.class);
 
 	@PersistenceContext
 	private EntityManager entityManager;
 
-	public void persist(StayNearbyPlaces transientInstance) {
-		log.debug("persisting StayNearbyPlaces instance");
+	public void persist(StaySuite transientInstance) {
+		log.debug("persisting StaySuite instance");
 		try {
 			entityManager.persist(transientInstance);
 			log.debug("persist successful");
@@ -37,8 +36,8 @@ public class StayNearByPlaceDaoImpl implements StayNearByPlaceDao {
 		}
 	}
 
-	public void remove(StayNearbyPlaces persistentInstance) {
-		log.debug("removing StayNearbyPlaces instance");
+	public void remove(StaySuite persistentInstance) {
+		log.debug("removing StaySuite instance");
 		try {
 			entityManager.remove(persistentInstance);
 			log.debug("remove successful");
@@ -48,10 +47,11 @@ public class StayNearByPlaceDaoImpl implements StayNearByPlaceDao {
 		}
 	}
 
-	public StayNearbyPlaces merge(StayNearbyPlaces detachedInstance) {
-		log.debug("merging StayNearbyPlaces instance");
+	@Override
+	public StaySuite merge(StaySuite detachedInstance) {
+		log.debug("merging StaySuite instance");
 		try {
-			StayNearbyPlaces result = entityManager.merge(detachedInstance);
+			StaySuite result = entityManager.merge(detachedInstance);
 			log.debug("merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -60,11 +60,11 @@ public class StayNearByPlaceDaoImpl implements StayNearByPlaceDao {
 		}
 	}
 
-	public StayNearbyPlaces findById(int id) {
-		log.debug("getting StayNearbyPlaces instance with id: " + id);
+	@Override
+	public StaySuite findById(int id) {
+		log.debug("getting StaySuite instance with id: " + id);
 		try {
-			StayNearbyPlaces instance = entityManager.find(
-					StayNearbyPlaces.class, id);
+			StaySuite instance = entityManager.find(StaySuite.class, id);
 			log.debug("get successful");
 			return instance;
 		} catch (RuntimeException re) {
@@ -72,16 +72,16 @@ public class StayNearByPlaceDaoImpl implements StayNearByPlaceDao {
 			throw re;
 		}
 	}
-
+	
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<StayNearbyPlaces> stayFindNearByPlacesByStayId(int stayId){
-		log.debug("getting StaySuite instance with id: " + stayId);
+	public List<StaySuite> findstaySuitesByStayId(int stayId){
+		log.debug("getting StaySuite instance with saty id: " + stayId);
 		try {
 			
-			Query queryString=entityManager.createQuery("SELECT s FROM StayNearbyPlaces s JOIN s.stay stay WHERE stay.id=:stayId");
+			Query queryString=entityManager.createQuery("SELECT s FROM StaySuite s JOIN s.stay stay WHERE stay.id=:stayId");
 			queryString.setParameter("stayId", stayId);
-			return (List<StayNearbyPlaces>)queryString.getResultList();
+			return (List<StaySuite>)queryString.getResultList();
 		} catch (RuntimeException re) {
 			log.error("get failed", re);
 			throw re;

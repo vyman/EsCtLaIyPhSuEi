@@ -1,29 +1,28 @@
-package com.indi.stay.repo;
+package com.indi.stay.repo.impl;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.indi.stay.domain.UserRole;
-import com.indi.stay.repo.UserRoleDao;
+import com.indi.stay.domain.StayPhotos;
+import com.indi.stay.repo.StayPhotoDao;
+
 
 @Repository
 @Transactional
-public class UserRoleDaoImpl implements UserRoleDao{
+public class StayPhotoDaoImpl implements StayPhotoDao {
+	
+	private static final Log log = LogFactory.getLog(StayPhotoDaoImpl.class);
 
-
-	private static final Log log = LogFactory.getLog(UserRoleDaoImpl.class);
-
-	@Autowired
+	@PersistenceContext
 	private EntityManager entityManager;
 
-	@Override
-	public void persist(UserRole transientInstance) {
-		log.debug("persisting Userrole instance");
+	public void persist(StayPhotos transientInstance) {
+		log.debug("persisting StayPhotos instance");
 		try {
 			entityManager.persist(transientInstance);
 			log.debug("persist successful");
@@ -33,8 +32,8 @@ public class UserRoleDaoImpl implements UserRoleDao{
 		}
 	}
 
-	public void remove(UserRole persistentInstance) {
-		log.debug("removing Userrole instance");
+	public void remove(StayPhotos persistentInstance) {
+		log.debug("removing StayPhotos instance");
 		try {
 			entityManager.remove(persistentInstance);
 			log.debug("remove successful");
@@ -44,10 +43,10 @@ public class UserRoleDaoImpl implements UserRoleDao{
 		}
 	}
 
-	public UserRole merge(UserRole detachedInstance) {
-		log.debug("merging Userrole instance");
+	public StayPhotos merge(StayPhotos detachedInstance) {
+		log.debug("merging StayPhotos instance");
 		try {
-			UserRole result = entityManager.merge(detachedInstance);
+			StayPhotos result = entityManager.merge(detachedInstance);
 			log.debug("merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -56,10 +55,10 @@ public class UserRoleDaoImpl implements UserRoleDao{
 		}
 	}
 
-	public UserRole findById(int id) {
-		log.debug("getting Userrole instance with id: " + id);
+	public StayPhotos findById(int id) {
+		log.debug("getting StayPhotos instance with id: " + id);
 		try {
-			UserRole instance = entityManager.find(UserRole.class, id);
+			StayPhotos instance = entityManager.find(StayPhotos.class, id);
 			log.debug("get successful");
 			return instance;
 		} catch (RuntimeException re) {

@@ -99,6 +99,8 @@ To Get Best Price!</div>
 <div class="bdy-container">
 
 </div>
+
+
 <!-- footer -->
 <%@include file="pr_footer.jsp" %>
 </body>
