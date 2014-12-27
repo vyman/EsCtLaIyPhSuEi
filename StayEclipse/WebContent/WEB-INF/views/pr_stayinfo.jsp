@@ -8,7 +8,7 @@
 <link href="<c:url value="/static/resources/css/inner-style.css"/>" rel="stylesheet"
 	type="text/css" />
 
-<script type="text/javascript" src="<c:url value="/static/resources/jQueryAssets/jQueryAssets/jquery-1.8.3.min.js"/>"></script>  
+<script type="text/javascript" src="<c:url value="/static/resources/jQueryAssets/jquery-1.8.3.min.js"/>"></script>  
 
 <script type="text/javascript">
 $(function() {
