@@ -16,18 +16,22 @@
 <div class="suiteleftsec"><h2>Suits Available</h2>
 	<c:forEach items="${staySuites}" var="staySuite" >	
 	<a href="http://localhost:7001/StayEclipse/StaySuite/getSuiteDetails?staySuiteId=${staySuite.id}"> 			
-	<img src="${ staySuite.suiteProfilePic}" />
+	<img src="<c:url value="/static/resources/images/s1.jpg" />" >
+	<img src="<c:url value="/static/resources/images/s2.jpg" />" >
+	<img src="<c:url value="/static/resources/images/s3.jpg" />" >
 	</a>
 	</c:forEach>
 </div>    
 <div class="suiterightsec"><h2>Menus & Prices</h2>
-	<img src="${stayMenu.menuphoto}" width="800" height="400" /></td>
+	<img src="<c:url value="/static/resources/images/ban1.jpg" />" width="800" height="400" /></td>
 </div>
 
 <div class="suiterightsec"><h2>Places nearby</h2>
 	<c:forEach items="${stayNearByPlaces}" var="stayNearByPlace" >				
 	<a href="http://localhost:7001/StayEclipse/StayNearByPlace/getStayNearByPlaceDetails?stayNearByPlaceId=${stayNearByPlace.id}">
-	<img src="${ stayNearByPlace.photo}" />
+	<img src="<c:url value="/static/resources/images/s1.jpg" />" >
+	<img src="<c:url value="/static/resources/images/s2.jpg" />" >
+	<img src="<c:url value="/static/resources/images/s3.jpg" />" >
 	</a>
 	</c:forEach>
 </div>

@@ -40,7 +40,7 @@ public class HomeController {
 //			model.addAttribute("facilities", facilities);
 			model.addAttribute("stays", stayService.findAllOrderedByRating());
 		 
-			return "pr_home";
+			return "pr_addroom";
 		 
 		 
 	    }
