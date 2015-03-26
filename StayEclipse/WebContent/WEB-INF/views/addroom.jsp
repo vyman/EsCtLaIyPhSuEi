@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <!--
 /*
- * jQuery File Upload Plugin Demo 9.0.1
+ * jQuery File Upload Plugin Demo 9.1.0
  * https://github.com/blueimp/jQuery-File-Upload
  *
  * Copyright 2010, Sebastian Tschan
@@ -11,6 +11,7 @@
  * http://www.opensource.org/licenses/MIT
  */
 -->
+<%@ page pageEncoding="UTF-8" %>
 <html lang="en">
 <head>
 <!-- Force latest IE rendering engine or ChromeFrame if installed -->
@@ -21,35 +22,102 @@
 <title>jQuery File Upload Demo</title>
 <meta name="description" content="File Upload widget with multiple file selection, drag&amp;drop support, progress bars, validation and preview images, audio and video for jQuery. Supports cross-domain, chunked and resumable file uploads and client-side image resizing. Works with any server-side platform (PHP, Python, Ruby on Rails, Java, Node.js, Go etc.) that supports standard HTML form file uploads.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="resources/css/inner-style.css">
 <!-- Bootstrap styles -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <!-- Generic page styles -->
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="resources/css/bimp/style.css">
 <!-- blueimp Gallery styles -->
-<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
 <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
-<link rel="stylesheet" href="css/jquery.fileupload.css">
-<link rel="stylesheet" href="css/jquery.fileupload-ui.css">
+<link rel="stylesheet" href="resources/css/bimp/jquery.fileupload.css">
+<link rel="stylesheet" href="resources/css/bimp/jquery.fileupload-ui.css">
 <!-- CSS adjustments for browsers with JavaScript disabled -->
-<noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
-<noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
+<noscript><link rel="stylesheet" href="resources/css/bimp/jquery.fileupload-noscript.css"></noscript>
+<noscript><link rel="stylesheet" href="resources/css/bimp/jquery.fileupload-ui-noscript.css"></noscript>
 </head>
 <body>
+<div class="headerBg"><div class="header"><div class="logo"><img src="images/logo-huigere.png" /></div>
+<div class="loginbox btn-1">Welcome: Username &nbsp; | &nbsp;  <a href="#">Logout</a></div></div>
+     </div>
+
+<div class="bdy-container">
+   
+<div class="leftsec" style="height:auto !important;">
+<h2>Add Room:</h2>
+<table width="100%" cellpadding="5" cellspacing="5" border="0">
+<tr>
+<td class="text-6">Name :</td>
+<td><input type="text" name="stayName" id="stayName" /></td>
+</tr>
+<tr>
+<td class="text-6">Description :</td>
+<td><textarea type="text" name="address" id="address" ></textarea></td>
+</tr>
+<tr>
+<td class="text-6">Price :</td>
+<td><input type="text" name="city" id="city" /></td>
+</tr>
+<tr>
+<td class="text-6">Available No. of Rooms :</td>
+<td><input type="text" name="state" id="state" /></td>
+</tr>
+
+<tr>
+  <td>&nbsp;</td>
+  <td align="center"></td>
+</tr>
+</table>
+
+</div>
+<div class="rightsec1">
+<div style="text-align:left;">
+<h3>Facilities Available</h3>
+<table>
+<tr>
+<td><input type="checkbox" value="TV"></td><td>TV</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="AC"></td><td>A/C</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="TV"></td><td>Fridge</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="TV"></td><td>Washing Machine</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="TV"></td><td>WiFi</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="TV"></td><td>Breakfast</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="TV"></td><td>Microwave</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="TV"></td><td>Free Newspaper</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="TV"></td><td>Pickup & Drop</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="TV"></td><td>Travel Desk	</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="TV"></td><td>Car Rental Desk</td>
+</tr>
+<tr>
+</table>
+
+
+ </div>
+</div>  
+
 <div class="container">
-    <h1>jQuery File Upload Demo</h1>
-    <h2 class="lead">Basic Plus UI version</h2>
-    <ul class="nav nav-tabs">
-        <li><a href="basic.html">Basic</a></li>
-        <li><a href="basic-plus.html">Basic Plus</a></li>
-        <li class="active"><a href="index.html">Basic Plus UI</a></li>
-        <li><a href="angularjs.html">AngularJS</a></li>
-        <li><a href="jquery-ui.html">jQuery UI</a></li>
-    </ul>
-    
-    <!-- The file upload form used as target for the file upload widget -->
     <form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
         <!-- Redirect browsers with JavaScript disabled to the origin page -->
-        <noscript><input type="hidden" name="redirect" value="http://blueimp.github.io/jQuery-File-Upload/"></noscript>
+        <noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"></noscript>
         <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
         <div class="row fileupload-buttonbar">
             <div class="col-lg-7">
@@ -88,8 +156,12 @@
         <!-- The table listing the files available for upload/download -->
         <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
     </form>
-    <br>
     
+</div>
+
+<div class="cenDivBdr">
+<a href="#" class="submit_btn">Next <img src="images/arrow2.png" alt="" class="no_resize"></a> 
+</div>  
 </div>
 <!-- The blueimp Gallery widget -->
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
@@ -176,40 +248,40 @@
     </tr>
 {% } %}
 </script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
-<script src="js/vendor/jquery.ui.widget.js"></script>
+<script src="resources/js/bimp/vendor/jquery.ui.widget.js"></script>
 <!-- The Templates plugin is included to render the upload/download listings -->
-<script src="http://blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script>
+<script src="//blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script>
 <!-- The Load Image plugin is included for the preview images and image resizing functionality -->
-<script src="http://blueimp.github.io/JavaScript-Load-Image/js/load-image.min.js"></script>
+<script src="//blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
 <!-- The Canvas to Blob plugin is included for image resizing functionality -->
-<script src="http://blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
+<script src="//blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
 <!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <!-- blueimp Gallery script -->
-<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
-<script src="js/jquery.iframe-transport.js"></script>
+<script src="resources/js/bimp/jquery.iframe-transport.js"></script>
 <!-- The basic File Upload plugin -->
-<script src="js/jquery.fileupload.js"></script>
+<script src="resources/js/bimp/jquery.fileupload.js"></script>
 <!-- The File Upload processing plugin -->
-<script src="js/jquery.fileupload-process.js"></script>
+<script src="resources/js/bimp/jquery.fileupload-process.js"></script>
 <!-- The File Upload image preview & resize plugin -->
-<script src="js/jquery.fileupload-image.js"></script>
+<script src="resources/js/bimp/jquery.fileupload-image.js"></script>
 <!-- The File Upload audio preview plugin -->
-<script src="js/jquery.fileupload-audio.js"></script>
+<script src="resources/js/bimp/jquery.fileupload-audio.js"></script>
 <!-- The File Upload video preview plugin -->
-<script src="js/jquery.fileupload-video.js"></script>
+<script src="resources/js/bimp/jquery.fileupload-video.js"></script>
 <!-- The File Upload validation plugin -->
-<script src="js/jquery.fileupload-validate.js"></script>
+<script src="resources/js/bimp/jquery.fileupload-validate.js"></script>
 <!-- The File Upload user interface plugin -->
-<script src="js/jquery.fileupload-ui.js"></script>
+<script src="resources/js/bimp/jquery.fileupload-ui.js"></script>
 <!-- The main application script -->
-<script src="js/main.js"></script>
+<script src="resources/js/bimp/main.js"></script>
 <!-- The XDomainRequest Transport is included for cross-domain file deletion for IE 8 and IE 9 -->
 <!--[if (gte IE 8)&(lt IE 10)]>
-<script src="js/cors/jquery.xdr-transport.js"></script>
+<script src="resources/js/bimp/cors/jquery.xdr-transport.js"></script>
 <![endif]-->
 </body> 
 </html>

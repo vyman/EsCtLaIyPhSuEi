@@ -10,7 +10,7 @@
 <link href="<c:url value="/static/resources/jQueryAssets/jquery.ui.core.min.css" />" rel="stylesheet" type="text/css">
 <link href="<c:url value="/static/resources/jQueryAssets/jquery.ui.theme.min.css" />" rel="stylesheet" type="text/css">
 <link href="<c:url value="/static/resources/jQueryAssets/jquery.ui.datepicker.min.css" />" rel="stylesheet" type="text/css">
-<script src="<c:url value="/static/resources/jQueryAssets/jquery-1.8.3.min.js" />" type="text/javascript"></script>
+<script src="<c:url value="/static/resources/js/jquery-1.11.12.js" />" type="text/javascript"></script>
 <link rel="stylesheet" href="<c:url value="/static/resources/js/jquery.bxslider.css" />" type="text/css" />
 <script src="<c:url value="/static/resources/js/jquery.bxslider.js" />"></script>
 <script type="text/javascript" src="<c:url value="/static/resources/js/jquery.pickmeup.js" />" ></script>

@@ -11,7 +11,7 @@
 <link href="<c:url value="/static/resources/css/bootstrap.min.css" />" rel="stylesheet">
 <link rel="stylesheet" type="text/css" media="all" href="<c:url value="/static/resources/css/font-awesome.min.css" />" />
 <link rel="stylesheet" type="text/css" media="all" href="<c:url value="/static/resources/css/jgallery.min.css" />" />
-<script type="text/javascript" src="<c:url value="/static/resources/js/jquery-2.0.3.min.js" />" ></script>
+<script type="text/javascript" src="<c:url value="/static/resources/js/jquery-1.11.2.js" />" ></script>
 <script src="<c:url value="/static/resources/js/bootstrap.min.js" />" ></script>
 <script type="text/javascript" src="<c:url value="/static/resources/js/tinycolor-0.9.16.min.js" />" ></script>
 <script type="text/javascript" src="<c:url value="/static/resources/js/jgallery.min.js" />" ></script>

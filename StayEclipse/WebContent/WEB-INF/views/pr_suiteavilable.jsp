@@ -7,6 +7,14 @@
 <meta charset="utf-8">
 <title>Huigere</title>
 <link href="<c:url value="/static/resources/css/inner-style.css" />" rel="stylesheet" type="text/css" />
+<link href="<c:url value="/static/resources/css/imgLiquid.css" />" rel="stylesheet" type="text/css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" type="text/javascript"></script>
+<script src ="<c:url value="/static/resources/js/imgLiquidJs/imgLiquid.js" />" type="text/javascript"></script>
+<!-- <script type="text/javascript">
+	$(document).ready(function () {
+		$(".suiterightsec").imgLiquid({fill:false});
+	});
+	</script> -->
 </head>
 
 <body>
@@ -23,8 +31,7 @@
 <div class="suiterightsec"><h2>Menus & Prices</h2>
 	<img src="${stayMenu.menuphoto}" width="800" height="400" /></td>
 </div>
-
-<div class="suiterightsec"><h2>Places nearby</h2>
+<div class="suiterightsec imgLiquid"><h2>Places nearby</h2>
 	<c:forEach items="${stayNearByPlaces}" var="stayNearByPlace" >				
 	<a href="http://localhost:7001/StayEclipse/StayNearByPlace/getStayNearByPlaceDetails?stayNearByPlaceId=${stayNearByPlace.id}">
 	<img src="${ stayNearByPlace.photo}" />
