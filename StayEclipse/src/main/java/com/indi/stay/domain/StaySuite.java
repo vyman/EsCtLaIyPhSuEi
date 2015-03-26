@@ -11,6 +11,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
@@ -30,7 +31,7 @@ public class StaySuite implements java.io.Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private int id;
+	private Integer id;
 	private Stay stay;
 	private SuiteType suiteType;
 	private String discription;
@@ -45,7 +46,7 @@ public class StaySuite implements java.io.Serializable {
 	public StaySuite() {
 	}
 
-	public StaySuite(int id, Stay stay, SuiteType suiteType,
+	public StaySuite(Integer id, Stay stay, SuiteType suiteType,
 			String discription, String suiteCode,int numberOfAvilableRooms,Double price) {
 		this.id = id;
 		this.stay = stay;
@@ -70,12 +71,13 @@ public class StaySuite implements java.io.Serializable {
 	}
 
 	@Id
+	@GeneratedValue
 	@Column(name = "staysuite_id", unique = true, nullable = false)
-	public int getId() {
+	public Integer getId() {
 		return this.id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -166,7 +168,7 @@ public class StaySuite implements java.io.Serializable {
 		this.staysuitephotoses = staysuitephotoses;
 	}
 
-	@Column(name = "picpath", nullable = false, length = 200)
+	@Column(name = "picpath", nullable = true, length = 200)
 	public String getSuiteProfilePic() {
 		return suiteProfilePic;
 	}

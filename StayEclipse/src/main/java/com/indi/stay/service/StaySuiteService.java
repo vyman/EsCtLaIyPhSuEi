@@ -12,4 +12,6 @@ public interface StaySuiteService {
 	
 	StaySuite findById(int id);
 	
+	StaySuite merge(StaySuite detachedInstance);
+	
 }

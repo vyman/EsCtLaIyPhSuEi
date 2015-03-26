@@ -32,4 +32,18 @@ public class StayServiceImpl implements StayService {
 		// TODO Auto-generated method stub
 		return stayDao.findAllOrderedByRating();
 	}
+
+	@Override
+	public Stay findById(int id) {
+		// TODO Auto-generated method stub
+		return stayDao.findById(id);
+	}
+
+	@Override
+	public Stay merge(Stay detachedInstance) {
+		// TODO Auto-generated method stub
+		return stayDao.merge(detachedInstance);
+	}
+	
+	
 }

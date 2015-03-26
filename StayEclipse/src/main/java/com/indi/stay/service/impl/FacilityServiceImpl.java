@@ -24,4 +24,12 @@ public class FacilityServiceImpl implements FacilityService {
 		System.out.println("test commit");
 		return facilityDao.findAllOrderedByName();
 	}
+
+	@Override
+	public Facility findById(int id) {
+		// TODO Auto-generated method stub
+		return facilityDao.findById(id);
+	}
+	
+	
 }

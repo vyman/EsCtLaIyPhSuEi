@@ -28,4 +28,10 @@ public class StaySuiteServiceImpl implements StaySuiteService {
 	public StaySuite findById(int id) {
 		return staySuiteDao.findById(id);
 	}
+
+	@Override
+	public StaySuite merge(StaySuite detachedInstance) {
+		// TODO Auto-generated method stub
+		return staySuiteDao.merge(detachedInstance);
+	}
 }

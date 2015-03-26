@@ -22,7 +22,7 @@ public class StaySuitePhotos implements java.io.Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private int id;
+	private Integer id;
 	private StaySuite staysuite;
 	private String imagepath;
 	private String discription;
@@ -30,13 +30,13 @@ public class StaySuitePhotos implements java.io.Serializable {
 	public StaySuitePhotos() {
 	}
 
-	public StaySuitePhotos(int id, StaySuite staysuite, String imagepath) {
+	public StaySuitePhotos(Integer id, StaySuite staysuite, String imagepath) {
 		this.id = id;
 		this.staysuite = staysuite;
 		this.imagepath = imagepath;
 	}
 
-	public StaySuitePhotos(int id, StaySuite staysuite, String imagepath,
+	public StaySuitePhotos(Integer id, StaySuite staysuite, String imagepath,
 			String discription) {
 		this.id = id;
 		this.staysuite = staysuite;
@@ -47,11 +47,11 @@ public class StaySuitePhotos implements java.io.Serializable {
 	@Id
 	@GeneratedValue
 	@Column(name = "id", unique = true, nullable = false)
-	public int getId() {
+	public Integer getId() {
 		return this.id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 

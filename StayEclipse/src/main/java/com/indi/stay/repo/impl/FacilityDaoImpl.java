@@ -63,6 +63,7 @@ public class FacilityDaoImpl implements FacilityDao {
 		}
 	}
 
+	@Override
 	public Facility findById(int id) {
 		log.debug("getting Facility instance with id: " + id);
 		try {

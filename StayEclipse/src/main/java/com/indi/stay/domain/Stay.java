@@ -31,7 +31,7 @@ public class Stay implements java.io.Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private int id;
+	private Integer id;
 
 	@NotNull
 	@Size(min = 1, max = 25)
@@ -69,7 +69,7 @@ public class Stay implements java.io.Serializable {
 	public Stay() {
 	}
 
-	public Stay(int id, String stayname, String address, String phoneno,
+	public Stay(Integer id, String stayname, String address, String phoneno,
 			String emailid, String websitelink) {
 		this.id = id;
 		this.stayname = stayname;
@@ -79,7 +79,7 @@ public class Stay implements java.io.Serializable {
 		this.websitelink = websitelink;
 	}
 
-	public Stay(int id, String stayname, String address, String phoneno,
+	public Stay(Integer id, String stayname, String address, String phoneno,
 			String emailid, String websitelink, Set<StaySuite> staySuites,
 			Set<StayNearbyPlaces> stayNearbyPlaceses, Set<StayPhotos> stayPhotoses,Integer rating, Set<StayMenu> staymenus) {
 		this.id = id;
@@ -98,11 +98,11 @@ public class Stay implements java.io.Serializable {
 	@Id
 	@GeneratedValue
 	@Column(name = "id", unique = true, nullable = false)
-	public int getId() {
+	public Integer getId() {
 		return this.id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 

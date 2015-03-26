@@ -48,7 +48,7 @@ public class RoomController {
 		model.addAttribute("newRoom", new StaySuite());
 		model.addAttribute("facilities", facilities);
 		model.addAttribute("suiteTypes", suiteTypes);
-		return "pr_addroom";
+		return "addroom";
 	}
 
 	@RequestMapping(method=RequestMethod.POST,value="/addRoom")
@@ -61,7 +61,7 @@ public class RoomController {
 			model.addAttribute("newRoom", new StaySuite());
 			model.addAttribute("facilities", facilities);
 			model.addAttribute("suiteTypes", suiteTypes);
-			return "pr_addroom";
+			return "addroom";
 		}
 		else {
 			List<SuiteType> suiteTypes= suiteTypeService.findAllOrderedByName();

@@ -10,4 +10,6 @@ public interface FacilityDao {
 
 	List<Facility> findAllOrderedByName();
 
+	Facility findById(int id);
+
 }

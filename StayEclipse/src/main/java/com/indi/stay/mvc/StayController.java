@@ -1,5 +1,7 @@
 package com.indi.stay.mvc;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +13,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.indi.stay.domain.Facility;
 import com.indi.stay.domain.Stay;
+import com.indi.stay.domain.StaySuite;
+import com.indi.stay.domain.SuiteType;
+import com.indi.stay.service.FacilityService;
 import com.indi.stay.service.StayMenuService;
 import com.indi.stay.service.StayNearByPlaceService;
 import com.indi.stay.service.StayService;
@@ -36,6 +42,9 @@ public class StayController {
 
 	@Autowired
 	private StaySuiteService staySuiteService;
+	
+	@Autowired
+	private FacilityService facilityService;
 
 
 	@RequestMapping(method=RequestMethod.GET , value="/Type")
@@ -67,8 +76,14 @@ public class StayController {
 			return "pr_stayinfo";
 		}
 		else {
-			stayService.persist(newStay);
-			return "pr_stayinfo";
+			Stay stay=stayService.merge(newStay);
+			List<SuiteType> suiteTypes= suiteTypeService.findAllOrderedByName();
+			List<Facility> facilities= facilityService.findAllOrderedByName();
+			model.addAttribute("newStaySuite", new StaySuite());
+			model.addAttribute("stayId", stay.getId());
+			model.addAttribute("facilities", facilities);
+			model.addAttribute("suiteTypes", suiteTypes);
+	        return "addSuite";
 		}
 	}
 	

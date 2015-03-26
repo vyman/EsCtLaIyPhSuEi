@@ -9,4 +9,6 @@ public interface FacilityService {
 	void persist(Facility facility);
 
 	List<Facility> findAllOrderedByName();
+	
+	Facility findById(int id);
 }
