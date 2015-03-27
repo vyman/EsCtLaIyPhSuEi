@@ -42,6 +42,9 @@ public class StayServiceImpl implements StayService {
 	@Override
 	public Stay merge(Stay detachedInstance) {
 		// TODO Auto-generated method stub
+		String profileImgPath=nuxeoServerService.persistImageAndReturnPath(detachedInstance.getProfileImagePic());
+		detachedInstance.setProfileImgPath(profileImgPath);
+		detachedInstance.setProfileImagePic(null);
 		return stayDao.merge(detachedInstance);
 	}
 	

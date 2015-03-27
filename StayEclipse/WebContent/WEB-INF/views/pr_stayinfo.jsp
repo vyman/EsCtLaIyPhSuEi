@@ -7,8 +7,8 @@
 <title>Huigere</title>
 <link href="<c:url value="/static/resources/css/inner-style.css"/>" rel="stylesheet"
 	type="text/css" />
-
-<script type="text/javascript" src="<c:url value="/static/resources/js/jquery-1.11.12.js"/>"></script>  
+  
+<script type="text/javascript" src="<c:url value="/static/resources/js/jquery-1.11.2.js" />" ></script>
 
 <script type="text/javascript">
 $(function() {
