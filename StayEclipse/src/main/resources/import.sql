@@ -30,7 +30,7 @@ insert into staynearbyplaces (id, discription, distance, photo, place_name, stay
 insert into staynearbyplaces (id, discription, distance, photo, place_name, stay_id) values (1003, 'place2', '40', 'http://localhost:8080/nuxeo/nxbigfile/default/8b7a4d8b-18f1-438b-94b0-b4eb7bae444b/file:content/s3.jpg', 'test3', 1000);
 
 
-insert into staymenu (id, menuphoto, stay_id) values (1000, 'http://localhost:8080/nuxeo/nxbigfile/default/d3651c14-2c80-44cc-85af-fb3075321d1c/file:content/pic2.jpg', 1000);
+insert into staymenu (id, menuphoto, stay_id) values (1000, 'http://localhost:8080/nuxeo/nxbigfile/default/4519736b-d612-40db-8cf9-7e04c81f6f8a/file:content/page1_pic1-01.jpg', 1000);
 
 insert into staysuite (staysuite_id, discription, number_of_avilable_rooms, price, suite_code, stay_id, suite_type ,picpath) values (1000, 'single room', 2, 100, 'A01', 1000, 1,'http://localhost:8080/nuxeo/nxbigfile/default/8b7a4d8b-18f1-438b-94b0-b4eb7bae444b/file:content/s3.jpg');
 
