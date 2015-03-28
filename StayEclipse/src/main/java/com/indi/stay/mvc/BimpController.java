@@ -140,7 +140,7 @@ public class BimpController {
 	            
 	            boolean noError=true;
 	    		if(noError){
-	    		bimpPostFile.setName(fileName);
+	    		bimpPostFile.setName(multipartFile.getName());
 	    		bimpPostFile.setSize(multipartFile.getSize());
 	    		bimpPostFile.setUrl(staySuitePhotoImgPath);
 	    		bimpPostFile.setThumbnailUrl(staySuitePhotoImgPath);
