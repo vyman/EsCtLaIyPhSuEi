@@ -130,8 +130,13 @@ public class BimpController {
 //	            writeToDisk(fileName, multipartFile);
 	            staySuitePhotoImgPath=nuxeoServerService.persistImageAndReturnPath((CommonsMultipartFile) multipartFile);
 	            staySuitePhotos.setImagepath(staySuitePhotoImgPath);
+	            if(staySuite.getSuiteProfilePic()==null){
+	            	staySuite.setSuiteProfilePic(staySuitePhotoImgPath);
+	            	staySuite=staySuiteService.merge(staySuite);
+	            }
+	            
 	            staySuitePhotos.setStaysuite(staySuite);
-	            staySuitePhotosService.persist(staySuitePhotos);
+	            staySuitePhotosService.merge(staySuitePhotos);
 	            
 	            boolean noError=true;
 	    		if(noError){
@@ -139,7 +144,7 @@ public class BimpController {
 	    		bimpPostFile.setSize(multipartFile.getSize());
 	    		bimpPostFile.setUrl(staySuitePhotoImgPath);
 	    		bimpPostFile.setThumbnailUrl(staySuitePhotoImgPath);
-	    		bimpPostFile.setDeleteUrl("http://localhost:7001/StayEclipse/Bimp/server/php");
+	    		bimpPostFile.setDeleteUrl("http://localhost:7001/StayEclipse/Bimp/server/php/"+staySuitePhotos.getId());
 	    		bimpPostFile.setDeleteType("DELETE");
 	    		}else{
 	    			bimpPostFile.setName("test");
@@ -158,30 +163,7 @@ public class BimpController {
 		Gson gson= new Gson();
 		String json=gson.toJson(bimpPostFileList);
 		return json;
-	}
-	
-	@RequestMapping(method=RequestMethod.POST,value="/addRoom")
-	public String handleAddRoomBooking(@Valid @ModelAttribute("newRoom") StaySuite staySuite, BindingResult result, Model model)
-	{
-		if (result.hasErrors()) {
-			model.addAttribute("error", null);
-			List<SuiteType> suiteTypes= suiteTypeService.findAllOrderedByName();
-			List<Facility> facilities= facilityService.findAllOrderedByName();
-			model.addAttribute("newRoom", new StaySuite());
-			model.addAttribute("facilities", facilities);
-			model.addAttribute("suiteTypes", suiteTypes);
-			return "bimp";
-		}
-		else {
-			List<SuiteType> suiteTypes= suiteTypeService.findAllOrderedByName();
-			List<Facility> facilities= facilityService.findAllOrderedByName();
-			model.addAttribute("newRoom", new StaySuite());
-			model.addAttribute("facilities", facilities);
-			model.addAttribute("suiteTypes", suiteTypes);
-			return "bimp";
-		}
-	}
-
+	}	
 
 }
 

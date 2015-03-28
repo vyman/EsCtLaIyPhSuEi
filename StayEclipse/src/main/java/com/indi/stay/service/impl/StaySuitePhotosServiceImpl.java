@@ -20,4 +20,10 @@ public class StaySuitePhotosServiceImpl implements StaySuitePhotosService {
 		
 	}
 
+	@Override
+	public StaySuitePhotos merge(StaySuitePhotos detachedInstance) {
+		// TODO Auto-generated method stub
+		return staySuitePhotosDao.merge(detachedInstance);
+	}
+
 }

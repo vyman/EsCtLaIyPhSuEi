@@ -52,7 +52,7 @@
 	<div class="headerBg">
 		<div class="header">
 			<div class="logo">
-				<img src="images/logo-huigere.png" />
+				<img src="resources/images/logo-huigere.png" />
 			</div>
 			<div class="loginbox btn-1">
 				Welcome: Username &nbsp; | &nbsp; <a href="#">Logout</a>
@@ -62,6 +62,10 @@
 
 	<div class="bdy-container">
 
+		<div class="leftsec" style="height: auto !important;">
+			<h2>Add Suite Photos:</h2>
+		</div>
+
 		<div class="container">
 			<form id="fileupload" action="//jquery-file-upload.appspot.com/"
 				method="POST" enctype="multipart/form-data">
@@ -70,7 +74,8 @@
 					<input type="hidden" name="redirect"
 						value="https://blueimp.github.io/jQuery-File-Upload/">
 				</noscript>
-				<input type="hidden" name="staySuiteId" value="${staySuiteId}" id="staySuiteId">
+				<input type="hidden" name="staySuiteId" value="${staySuiteId}"
+					id="staySuiteId">
 				<!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
 				<div class="row fileupload-buttonbar">
 					<div class="col-lg-7">
@@ -114,8 +119,9 @@
 		</div>
 
 		<div class="cenDivBdr">
-			<a href="javascript:document.getElementById('roomForm').submit();" class="submit_btn" >Next <img src="images/arrow2.png"
-				alt="" class="no_resize"></a>
+			<a href="javascript:document.getElementById('roomForm').submit();"
+				class="submit_btn">Next <img src="images/arrow2.png" alt=""
+				class="no_resize"></a>
 		</div>
 	</div>
 	<!-- The blueimp Gallery widget -->
