@@ -32,6 +32,7 @@ public class StaySuitePhotosDaoImpl implements StaySuitePhotosDao {
 		}
 	}
 
+	@Override
 	public void remove(StaySuitePhotos persistentInstance) {
 		log.debug("removing Staysuitephotos instance");
 		try {
@@ -43,6 +44,7 @@ public class StaySuitePhotosDaoImpl implements StaySuitePhotosDao {
 		}
 	}
 
+	@Override
 	public StaySuitePhotos merge(StaySuitePhotos detachedInstance) {
 		log.debug("merging Staysuitephotos instance");
 		try {
@@ -55,6 +57,8 @@ public class StaySuitePhotosDaoImpl implements StaySuitePhotosDao {
 		}
 	}
 
+	
+	@Override
 	public StaySuitePhotos findById(int id) {
 		log.debug("getting Staysuitephotos instance with id: " + id);
 		try {

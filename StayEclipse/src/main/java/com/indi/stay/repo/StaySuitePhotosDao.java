@@ -8,4 +8,10 @@ public interface StaySuitePhotosDao {
 	
 	StaySuitePhotos merge(StaySuitePhotos detachedInstance);
 
+	void remove(StaySuitePhotos persistentInstance);
+
+	StaySuitePhotos findById(int id);
+	
+	
+
 }
