@@ -4,23 +4,6 @@
 <meta charset="utf-8">
 <title>Huigere</title>
 <link href="resources/css/inner-style.css" rel="stylesheet" type="text/css" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Bootstrap styles -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<!-- Generic page styles -->
-<link rel="stylesheet" href="resources/css/bimp/style.css">
-<!-- blueimp Gallery styles -->
-<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-<!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
-<link rel="stylesheet" href="resources/css/bimp/jquery.fileupload.css">
-<link rel="stylesheet" href="resources/css/bimp/jquery.fileupload-ui.css">
-<!-- CSS adjustments for browsers with JavaScript disabled -->
-<noscript>
-<link rel="stylesheet" href="resources/css/bimp/jquery.fileupload-noscript.css">
-</noscript>
-<noscript>
-<link rel="stylesheet" href="resources/css/bimp/jquery.fileupload-ui-noscript.css">
-</noscript>
 </head>
 <body>
 <div class="headerBg">

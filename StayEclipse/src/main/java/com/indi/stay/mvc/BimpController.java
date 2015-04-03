@@ -16,6 +16,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -79,10 +80,12 @@ public class BimpController {
 		System.out.println("head method to set server status");
 	}
 
-	@RequestMapping(method=RequestMethod.DELETE,value="/server/php")
+	@RequestMapping(method=RequestMethod.DELETE,value="/server/php/{staySuitePhotoId}")
 	@ResponseBody
-	public String handleGetServer(Model model)
+	public String handleGetServer(Model model,@PathVariable("staySuitePhotoId") Integer staySuitePhotoId)
 	{
+		
+		staySuitePhotosService.findAndDeleteById(staySuitePhotoId);
 		Map<String, Boolean> map = new HashMap<String, Boolean>();
 		map.put("test.jpg", true);
 		
@@ -136,7 +139,7 @@ public class BimpController {
 	            }
 	            
 	            staySuitePhotos.setStaysuite(staySuite);
-	            staySuitePhotosService.merge(staySuitePhotos);
+	            staySuitePhotos=staySuitePhotosService.merge(staySuitePhotos);
 	            
 	            boolean noError=true;
 	    		if(noError){

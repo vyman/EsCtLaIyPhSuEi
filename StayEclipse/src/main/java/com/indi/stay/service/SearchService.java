@@ -7,7 +7,6 @@ import com.indi.stay.domain.Stay;
 
 public interface SearchService {
 	
-
 	public List<Stay> findAll();
 }
 

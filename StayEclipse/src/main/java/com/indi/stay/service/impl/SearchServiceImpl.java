@@ -15,15 +15,10 @@ public class SearchServiceImpl implements SearchService {
 	@Autowired
 	private SearchDao searchDao;
 	
-	public void persist(Stay searchService){
-		searchDao.persist(searchService);
-	}
-	
-
 	@Override
 	public List<Stay> findAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return searchDao.findAll();
 	}
 	
 	
