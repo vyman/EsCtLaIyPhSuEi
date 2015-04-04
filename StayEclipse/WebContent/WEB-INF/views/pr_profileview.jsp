@@ -1,20 +1,21 @@
 <!doctype html>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+
 <html>
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Huigere</title>
-<link href="<c:url value="/static/resources/css/inner-style.css" />" rel="stylesheet" type="text/css" />
-<link href="<c:url value="/static/resources/css/bootstrap.min.css" />" rel="stylesheet">
-<link rel="stylesheet" type="text/css" media="all" href="<c:url value="/static/resources/css/font-awesome.min.css" />" />
-<link rel="stylesheet" type="text/css" media="all" href="<c:url value="/static/resources/css/jgallery.min.css" />" />
-<script type="text/javascript" src="<c:url value="/static/resources/js/jquery-1.11.2.js" />" ></script>
-<script src="<c:url value="/static/resources/js/bootstrap.min.js" />" ></script>
-<script type="text/javascript" src="<c:url value="/static/resources/js/tinycolor-0.9.16.min.js" />" ></script>
-<script type="text/javascript" src="<c:url value="/static/resources/js/jgallery.min.js" />" ></script>
+<link href="resources/css/inner-style.css" rel="stylesheet" type="text/css" />
+<link href="resources/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="all" href="resources/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="resources/css/jgallery.min.css" />
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script src="resources/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="resources/js/tinycolor-0.9.16.min.js"></script>
+<script type="text/javascript" src="resources/js/jgallery.min.js"></script>
 <script type="text/javascript">
     $( function() {
         $( '#gallery' ).jGallery( {
@@ -24,7 +25,7 @@
     </script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-<link rel="stylesheet" href="//resources/demos/style.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
 <script>
 $(function() {
 $( ".datepicker" ).datepicker();
@@ -33,7 +34,12 @@ $( ".datepicker" ).datepicker();
 </head>
 
 <body>
-<%@include file="pr_header.jsp" %>
+<div class="headerBg">
+  <div class="header">
+    <div class="logo"><img src="resources/images/logo-huigere.png" /></div>
+    <div class="loginbox btn-1">Welcome: Username &nbsp; | &nbsp; <a href="#">Logout</a></div>
+  </div>
+</div>
 <div class="container">
   <h2>Profile View</h2>
   <div class="row">
@@ -53,7 +59,7 @@ $( ".datepicker" ).datepicker();
             <div class="col-sm-4 col-xs-4">Email:</div>
             <div class="col-sm-8 col-xs-8"><input type="text" name="email" id="email" /></div>
           </div>
-          <div class="col-sm-4 col-xs-4"> <img src="<c:url value="/static/resources/images/s1.jpg" />" height="100" /> </div> <div class="col-sm-12 col-xs-12 butdiv">
+          <div class="col-sm-4 col-xs-4"> <img src="resources/images/s1.jpg" height="100" /> </div> <div class="col-sm-12 col-xs-12 butdiv">
                   <button type="button" class="btn btn-sm btn-primary">Edit</button> </div>
         </div>
        
@@ -84,9 +90,9 @@ $( ".datepicker" ).datepicker();
             <div class="col-xs-4">Discount :</div>
               <div class="col-xs-8"><input type="text" name="discount" id="discount" value="20 %" />
             </div>
-         <div class="col-sm-4 col-xs-4"><a data-slide-index="0" href=""><img src="<c:url value="/static/resources/images/s1.jpg" />"  height="72" /></a></div>
-                <div class="col-sm-4 col-xs-4"><a data-slide-index="1" href=""><img src="<c:url value="/static/resources/images/s2.jpg" />" height="72" /></a></div>
-                <div class="col-sm-4 col-xs-4"><a data-slide-index="2" href=""><img src="<c:url value="/static/resources/images/s3.jpg" />" height="72" /></a></div>
+         <div class="col-sm-4 col-xs-4"><a data-slide-index="0" href=""><img src="resources/images/s1.jpg"  height="72" /></a></div>
+                <div class="col-sm-4 col-xs-4"><a data-slide-index="1" href=""><img src="resources/images/s2.jpg" height="72" /></a></div>
+                <div class="col-sm-4 col-xs-4"><a data-slide-index="2" href=""><img src="resources/images/s3.jpg" height="72" /></a></div>
           <div class="butdiv">
                   <button type="button" class="btn btn-sm btn-primary">Edit</button> </div>
         </div>
@@ -124,15 +130,9 @@ $( ".datepicker" ).datepicker();
             </div>
             <div class="panel-body">
               <div class="col-xs-12">
-                <div class="col-sm-4  col-xs-4"><a data-slide-index="0" href=""><img src="<c:url value="/static/resources/images/s1.jpg" />" height="72" /></a></div>
-                <div class="col-sm-4  col-xs-4"><a data-slide-index="1" href=""><img src="<c:url value="/static/resources/images/s2.jpg" />" height="72" /></a></div>
-                <div class="col-sm-4  col-xs-4"><a data-slide-index="2" href=""><img src="<c:url value="/static/resources/images/s3.jpg" />" height="72" /></a></div>
-                <div class="col-sm-4  col-xs-4"><a data-slide-index="0" href=""><img src="<c:url value="/static/resources/images/s1.jpg" />" height="72" /></a></div>
-                <div class="col-sm-4  col-xs-4"><a data-slide-index="1" href=""><img src="<c:url value="/static/resources/images/s2.jpg" />" height="72" /></a></div>
-                <div class="col-sm-4  col-xs-4"><a data-slide-index="2" href=""><img src="<c:url value="/static/resources/images/s3.jpg" />" height="72" /></a></div>
-                <div class="col-sm-4  col-xs-4"><a data-slide-index="0" href=""><img src="<c:url value="/static/resources/images/s1.jpg" />" height="72" /></a> </div>
-                <div class="col-sm-4  col-xs-4"><a data-slide-index="1" href=""><img src="<c:url value="/static/resources/images/s2.jpg" />" height="72" /></a></div>
-                
+              	<c:forEach items="${stayNearbyPlaces}" var="stayNearbyPlace">
+				<div class="col-sm-4  col-xs-4"><a data-slide-index="1" href=""><img src="${stayNearbyPlace.photo}" />" height="72" /></a></div>				
+				</c:forEach>
               </div>
               <div class="butdiv">
                   <button type="button" class="btn btn-sm btn-primary">Edit</button> </div>
@@ -146,15 +146,15 @@ $( ".datepicker" ).datepicker();
             </div>
             <div class="panel-body">
             <div class="col-xs-12">
-              <div class="col-sm-4  col-xs-4"><a data-slide-index="0" href=""><img src="<c:url value="/static/resources/images/s1.jpg" />" height="72" /></a></div>
-              <div class="col-sm-4  col-xs-4"><a data-slide-index="1" href=""><img src="<c:url value="/static/resources/images/s2.jpg" />" height="72" /></a></div>
-              <div class="col-sm-4  col-xs-4"><a data-slide-index="2" href=""><img src="<c:url value="/static/resources/images/s3.jpg" />" height="72" /></a></div>
-              <div class="col-sm-4  col-xs-4"><a data-slide-index="0" href=""><img src="<c:url value="/static/resources/images/s1.jpg" />" height="72" /></a> </div>
-              <div class="col-sm-4  col-xs-4"><a data-slide-index="1" href=""><img src="<c:url value="/static/resources/images/s2.jpg" />" height="72" /></a></div>
-              <div class="col-sm-4  col-xs-4"><a data-slide-index="2" href=""><img src="<c:url value="/static/resources/images/s3.jpg" />" height="72" /></a></div>
-              <div class="col-sm-4  col-xs-4"><a data-slide-index="0" href=""><img src="<c:url value="/static/resources/images/s1.jpg" />" height="72" /></a> </div>
-              <div class="col-sm-4  col-xs-4"><a data-slide-index="1" href=""><img src="<c:url value="/static/resources/images/s2.jpg" />" height="72" /></a></div>
-              <div class="col-sm-4  col-xs-4"><a data-slide-index="2" href=""><img src="<c:url value="/static/resources/images/s3.jpg" />" height="72" /></a></div>
+              <div class="col-sm-4   col-xs-4"><a data-slide-index="0" href=""><img src="resources/images/s1.jpg"  height="72" /></a></div>
+              <div class="col-sm-4   col-xs-4"><a data-slide-index="1" href=""><img src="resources/images/s2.jpg" height="72" /></a></div>
+              <div class="col-sm-4  col-xs-4"><a data-slide-index="2" href=""><img src="resources/images/s3.jpg" height="72" /></a></div>
+              <div class="col-sm-4  col-xs-4"><a data-slide-index="0" href=""><img src="resources/images/s1.jpg"  height="72" /></a> </div>
+              <div class="col-sm-4  col-xs-4"><a data-slide-index="1" href=""><img src="resources/images/s2.jpg" height="72" /></a></div>
+               <div class="col-sm-4  col-xs-4"><a data-slide-index="2" href=""><img src="resources/images/s3.jpg" height="72" /></a></div>
+               <div class="col-sm-4  col-xs-4"><a data-slide-index="0" href=""><img src="resources/images/s1.jpg"  height="72" /></a> </div>
+              <div class="col-sm-4  col-xs-4"><a data-slide-index="1" href=""><img src="resources/images/s2.jpg" height="72" /></a></div>
+               <div class="col-sm-4  col-xs-4"><a data-slide-index="2" href=""><img src="resources/images/s3.jpg" height="72" /></a></div>
               </div>
               <div class="butdiv">
                   <button type="button" class="btn btn-sm btn-primary">Edit</button> </div>
@@ -163,8 +163,6 @@ $( ".datepicker" ).datepicker();
     </div>
   </div>
 </div>
-
-
 
 <!-- footer -->
 <%@include file="pr_footer.jsp" %>

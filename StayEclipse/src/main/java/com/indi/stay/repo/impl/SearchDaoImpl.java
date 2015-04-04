@@ -1,6 +1,5 @@
 package com.indi.stay.repo.impl;
 
-import java.util.Iterator;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -13,7 +12,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.indi.stay.domain.Stay;
-import com.indi.stay.domain.StaySuite;
 import com.indi.stay.repo.SearchDao;
 
 @Repository
@@ -31,15 +29,7 @@ public  class SearchDaoImpl implements SearchDao {
 		log.debug("getting Stay by popularity");
 		try {
 
-			Query queryString=entityManager.createQuery("SELECT s FROM Stay s JOIN s.staySuites staySuites");
-			List<Stay> stays=(List<Stay>)queryString.getResultList();
-			for (Iterator iterator = stays.iterator(); iterator.hasNext();) {
-				Stay stay = (Stay) iterator.next();
-				
-				for (StaySuite staySuite:stay.getStaySuites()){
-					System.out.println(staySuite.getPrice());
-				}
-			}
+			Query queryString=entityManager.createQuery("SELECT s FROM Stay s JOIN FETCH  s.staySuites ss JOIN FETCH ss.suiteType st ");
 			return (List<Stay>)queryString.getResultList();
 		} catch (RuntimeException re) {
 			log.error("get failed", re);
